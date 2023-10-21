@@ -1,10 +1,13 @@
-import Image from "next/image";
-import SitePage from "@/components/SitePage";
+import Nav from "@/components/Nav";
+import PageContent from "@/components/PageContent";
 
 export default function Home() {
   return (
     <div>
-      <SitePage />
+      <Nav />
+      <div className="ml-48 text-2xl px-10">
+        <PageContent />
+      </div>
     </div>
   );
 }
