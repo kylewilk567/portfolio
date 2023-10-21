@@ -4,8 +4,15 @@ import { motion, AnimatePresence } from "framer-motion"; // Import motion and An
 import About from "./About";
 import Contact from "./Contact";
 import Main from "./Main";
+import useHash from "@/hooks/useHash";
 
-const PageContent = ({ activeSection, previousSection }) => {
+// TODO: How to add images?? - images are retrieved on the serverside, but we only know what images to retrieve based on clientside path. It seems we need to load all images all the time due to this.
+
+const PageContent = () => {
+  let { currentHash: activeSection, previousHash: previousSection } = useHash();
+  activeSection = activeSection.slice(1);
+  previousSection = previousSection.slice(1);
+
   return (
     <div style={{ position: "relative" }}>
       <div className="bg-white" style={{ position: "absolute", width: "100%" }}>
