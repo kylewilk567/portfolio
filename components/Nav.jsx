@@ -28,14 +28,16 @@ const Nav = () => {
           </div>
         </div>
 
-        {navLinks.map((link) => (
-          <NavLink
-            key={link}
-            link={link}
-            backgroundColor={backgroundColorMap[link.color]}
-            fillColor={fillColorMap[link.color]}
-          />
-        ))}
+        <div className="pt-6">
+          {navLinks.map((link) => (
+            <NavLink
+              key={link}
+              link={link}
+              backgroundColor={backgroundColorMap[link.color]}
+              fillColor={fillColorMap[link.color]}
+            />
+          ))}
+        </div>
       </div>
     </>
   );

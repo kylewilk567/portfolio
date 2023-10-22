@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      <div className="sm:ml-48 text-2xl px-10">
+      <div className="sm:ml-44 text-2xl">
         <PageContent />
       </div>
     </div>

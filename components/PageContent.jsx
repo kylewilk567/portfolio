@@ -15,8 +15,8 @@ const PageContent = () => {
   previousSection = previousSection.slice(1);
 
   return (
-    <div className="pt-4 relative">
-      <div className="bg-white absolute w-full">
+    <div className="pt-4 relative h-screen bg-white">
+      <div className="absolute w-full h-full bg-white px-10">
         {previousSection === "" && <Main />}
         {previousSection === "about" && <About />}
         {previousSection === "contact" && <Contact />}
@@ -24,7 +24,7 @@ const PageContent = () => {
 
       <AnimatePresence mode="wait">
         <motion.div
-          className="bg-white absolute w-full"
+          className="absolute w-full h-full bg-white px-10"
           key={activeSection}
           initial={{ x: "100%" }}
           animate={{ x: 0 }}

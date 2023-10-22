@@ -26,36 +26,26 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
       return "block p-2 pl-4 text-base no-underline text-gray-500 hover:text-gray-400";
   };
 
-  const getLink = (nav) => {
-    if (nav.id === activeSection || isHovered) {
-      return (
-        <div
-          className="flex items-center"
-          onMouseEnter={handleMouseEnter}
-          onMouseLeave={handleMouseLeave}
-        >
-          <div className="w-1 h-10 flex-shrink-0 z-20">
+  return (
+    <>
+      <div
+        className="flex items-center h-12"
+        onMouseEnter={handleMouseEnter}
+        onMouseLeave={handleMouseLeave}
+      >
+        {(link.id === activeSection || isHovered) && (
+          <div className="w-1 h-full flex-shrink-0 z-20">
             <div className={`${backgroundColor} w-full h-full z-30`} />
           </div>
-          {nav.icon}
-          <a className={getStyles(nav.id)} href={`#${nav.id}`}>
-            {nav.title}
-          </a>
-        </div>
-      );
-    } else {
-      return (
-        <div className="flex flex-row" onMouseEnter={handleMouseEnter}>
-          {nav.icon}
-          <a className={getStyles(nav.id)} href={`#${nav.id}`}>
-            {nav.title}
-          </a>
-        </div>
-      );
-    }
-  };
+        )}
 
-  return <>{getLink(link)}</>;
+        {link.icon}
+        <a className={getStyles(link.id)} href={`#${link.id}`}>
+          {link.title}
+        </a>
+      </div>
+    </>
+  );
 };
 
 export default NavLink;
