@@ -15,7 +15,7 @@ const PageContent = () => {
   previousSection = previousSection.slice(1);
 
   return (
-    <div className="pt-4 relative h-screen bg-white">
+    <>
       <div className="absolute w-full h-full bg-white px-10">
         {previousSection === "" && <Main />}
         {previousSection === "about" && <About />}
@@ -36,7 +36,7 @@ const PageContent = () => {
           {activeSection === "contact" && <Contact />}
         </motion.div>
       </AnimatePresence>
-    </div>
+    </>
   );
 };
 

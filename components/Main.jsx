@@ -29,7 +29,7 @@ const Main = () => {
 
   return (
     <>
-      <p className="font-bold">
+      <p className="font-bold text-4xl">
         Hi, I&rsquo;m&nbsp;
         <span className="font-bold text-brand_purple">
           {mainPageContent.name}
