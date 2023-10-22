@@ -6,7 +6,7 @@ import NavLink from "./NavLink";
 
 const Nav = () => {
   return (
-    <div className="h-full w-32 fixed z-10 top-0 left-0 bg-[#FAF9FF] overflow-x-hidden pt-6">
+    <div className="h-full w-44 fixed z-10 top-0 left-0 bg-[#FAF9FF] overflow-x-hidden pt-6">
       <div className="border-b-2 pb-2 border-[#DFD9FF] text-center">
         <div className="pb-6">
           <Image

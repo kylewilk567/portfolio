@@ -5,6 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Main from "./Main";
 import useHash from "@/hooks/useHash";
+import { TypeAnimation } from "react-type-animation";
 
 // TODO: How to add images?? - images are retrieved on the serverside, but we only know what images to retrieve based on clientside path. It seems we need to load all images all the time due to this.
 
@@ -14,17 +15,17 @@ const PageContent = () => {
   previousSection = previousSection.slice(1);
 
   return (
-    <div style={{ position: "relative" }}>
-      <div className="bg-white" style={{ position: "absolute", width: "100%" }}>
+    <div className="pt-4 relative">
+      <div className="bg-white absolute w-full">
         {previousSection === "" && <Main />}
         {previousSection === "about" && <About />}
         {previousSection === "contact" && <Contact />}
       </div>
+
       <AnimatePresence mode="wait">
         <motion.div
-          className="bg-white"
+          className="bg-white absolute w-full"
           key={activeSection}
-          style={{ position: "absolute", width: "100%" }}
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
           //   exit={{ x: '-100%' }}
