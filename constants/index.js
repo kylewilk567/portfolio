@@ -32,7 +32,7 @@ export const navLinks = [
   {
     id: "projects",
     title: "Projects & Leadership",
-    color: "brand_purple",
+    color: "brand_blue",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -47,7 +47,7 @@ export const navLinks = [
   {
     id: "contact",
     title: "Contact",
-    color: "brand_purple",
+    color: "brand_red",
     icon: (
       <svg
         xmlns="http://www.w3.org/2000/svg"
@@ -78,9 +78,13 @@ export const mainPageContent = {
 export const backgroundColorMap = {
   brand_purple: "bg-brand_purple",
   brand_green: "bg-brand_green",
+  brand_blue: "bg-brand_blue",
+  brand_red: "bg-brand_red",
 };
 
 export const fillColorMap = {
   brand_purple: "fill-brand_purple",
   brand_green: "fill-brand_green",
+  brand_blue: "fill-brand_blue",
+  brand_red: "fill-brand_red",
 };

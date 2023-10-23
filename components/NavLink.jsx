@@ -20,10 +20,10 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
   previousSection = previousSection.slice(1);
 
   const getStyles = (currentSection) => {
-    if (currentSection === activeSection)
-      return "block p-2 pl-2 text-base no-underline text-gray-500 hover:text-gray-400 font-bold"; // Note: Left padding should be equal to div width for active section
+    if (currentSection === activeSection || isHovered)
+      return "block pl-2 text-base no-underline text-gray-500 hover:text-gray-400 font-bold"; // Note: Left padding should be equal to div width for active section
     else
-      return "block p-2 pl-4 text-base no-underline text-gray-500 hover:text-gray-400";
+      return "block pl-4 text-base no-underline text-gray-500 hover:text-gray-400";
   };
 
   return (
@@ -34,14 +34,14 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
         onMouseLeave={handleMouseLeave}
       >
         {(link.id === activeSection || isHovered) && (
-          <div className="w-1 h-full flex-shrink-0 z-20">
-            <div className={`${backgroundColor} w-full h-full z-30`} />
-          </div>
+          <div className={`w-1 h-full z-20 ${backgroundColor}`} />
         )}
 
-        {link.icon}
         <a className={getStyles(link.id)} href={`#${link.id}`}>
-          {link.title}
+          <span className="flex items-center">
+            {link.icon}
+            {link.title}
+          </span>
         </a>
       </div>
     </>

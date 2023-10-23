@@ -11,6 +11,8 @@ module.exports = {
       colors: {
         brand_purple: "#615BEF",
         brand_green: "#139D7D",
+        brand_blue: "#2A75BB",
+        brand_red: "#F41010",
         "poke-blue": "#2A75BB",
         "poke-yellow": "#FECA1B",
         "type-bug": "#234B2C",
