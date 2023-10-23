@@ -64,7 +64,7 @@ export const navLinks = [
 export const mainPageContent = {
   name: "Kyle",
   description:
-    "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum. Few sentences on who I am",
+    "Currently a software engineer and FCG at Ford Motor Company embarking on an exciting journey in the tech world. I have a passion for crafting innovative solutions and delivering exceptional user experiences. In the early stages of my career, I'm fueled by a desire to learn and a commitment to solving challenges that have a real impact.  In addition to my software pursuits, I find enjoyment in hiking, skiing, and immersing myself in nature.",
   titles: [
     "Software Engineer",
     "Michigan Wolverine",
