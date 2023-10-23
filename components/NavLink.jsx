@@ -3,7 +3,9 @@ import useHash from "@/hooks/useHash";
 import React, { useState } from "react";
 
 const NavLink = ({ link, backgroundColor, fillColor }) => {
-  link.icon.props.className = fillColor;
+  link.icon.props.className = link.icon.props.className
+    ? link.icon.props.className + " " + fillColor
+    : fillColor;
 
   const [isHovered, setIsHovered] = useState(false);
 
@@ -23,7 +25,7 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
     if (currentSection === activeSection || isHovered)
       return "block pl-2 text-base no-underline text-gray-500 hover:text-gray-400 font-bold"; // Note: Left padding should be equal to div width for active section
     else
-      return "block pl-4 text-base no-underline text-gray-500 hover:text-gray-400";
+      return "block pl-3 text-base no-underline text-gray-500 hover:text-gray-400";
   };
 
   return (
@@ -38,7 +40,7 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
         )}
 
         <a className={getStyles(link.id)} href={`#${link.id}`}>
-          <span className="flex items-center">
+          <span className="flex items-center gap-2">
             {link.icon}
             {link.title}
           </span>
