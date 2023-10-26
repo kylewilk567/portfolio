@@ -8,13 +8,6 @@
   --background-end-rgb: 255, 255, 255;
 } */
 
-/* @media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
-} */
 
 body {
   /* color: rgb(var(--foreground-rgb));
@@ -25,3 +18,34 @@ body {
     )
     rgb(var(--background-start-rgb)); */
 }
+
+/* In your custom CSS */
+@layer components {
+  .btn {
+    @apply p-3 text-white text-sm rounded-2xl
+  }
+  [class='light'] .btn {
+    @apply bg-brand_purple hover:bg-brand_purple_hover active:bg-brand_purple_active;
+  }
+  [class='dark'] .btn {
+    @apply bg-brand_green hover:bg-brand_blue;
+  }
+  
+  [class='stars'] .btn {
+    @apply bg-brand_red hover:bg-brand_green;
+  }
+}
+
+.btn {
+
+}
+
+
+
+
+/* @layer utilities {
+  .bg_primary {
+    @apply light:bg-black dark:bg-white stars:bg-red;
+  }
+} */
+

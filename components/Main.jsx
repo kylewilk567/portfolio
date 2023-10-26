@@ -54,9 +54,7 @@ const Main = () => {
         <div className="lg:col-span-2">
           <p className="text-md pb-4">{mainPageContent.description}</p>
           <a href="/KyleResumeF23.pdf" download="Wilkinson_Kyle_Resume.pdf">
-            <button className="bg-brand_purple p-3 text-white text-sm rounded-2xl">
-              Download Resume
-            </button>
+            <button className="btn">Download Resume</button>
           </a>
         </div>
         <div className="hidden lg:block lg:col-span-1">

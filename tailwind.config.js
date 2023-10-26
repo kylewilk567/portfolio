@@ -1,5 +1,6 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
+  darkMode: "class",
   content: [
     "./pages/**/*.{js,ts,jsx,tsx,mdx}",
     "./components/**/*.{js,ts,jsx,tsx,mdx}",
@@ -10,10 +11,11 @@ module.exports = {
     extend: {
       colors: {
         brand_purple: "#615BEF",
+        brand_purple_hover: "#5953E2",
+        brand_purple_active: "#504CBF",
         brand_green: "#139D7D",
         brand_blue: "#2A75BB",
         brand_red: "#F41010",
-        "poke-blue": "#2A75BB",
         "poke-yellow": "#FECA1B",
         "type-bug": "#234B2C",
         "type-dark": "#040706",
