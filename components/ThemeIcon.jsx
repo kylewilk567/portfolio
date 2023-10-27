@@ -4,15 +4,15 @@ import { useTheme } from "next-themes";
 
 const ThemeIcon = () => {
   const [mounted, setMounted] = useState(false);
-  const { theme, setTheme } = useTheme();
+  const { resolvedTheme, setTheme } = useTheme();
   const iconSize = 16;
 
   let iconMap = {
     light: (
       <button
         onClick={() => {
-          if (theme === "light") setTheme("dark");
-          else if (theme === "dark") setTheme("stars");
+          if (resolvedTheme === "light") setTheme("dark");
+          else if (resolvedTheme === "dark") setTheme("stars");
           else setTheme("light");
         }}
       >
@@ -30,8 +30,8 @@ const ThemeIcon = () => {
     dark: (
       <button
         onClick={() => {
-          if (theme === "light") setTheme("dark");
-          else if (theme === "dark") setTheme("stars");
+          if (resolvedTheme === "light") setTheme("dark");
+          else if (resolvedTheme === "dark") setTheme("stars");
           else setTheme("light");
         }}
       >
@@ -49,8 +49,8 @@ const ThemeIcon = () => {
     stars: (
       <button
         onClick={() => {
-          if (theme === "light") setTheme("dark");
-          else if (theme === "dark") setTheme("stars");
+          if (resolvedTheme === "light") setTheme("dark");
+          else if (resolvedTheme === "dark") setTheme("stars");
           else setTheme("light");
         }}
       >
@@ -77,10 +77,10 @@ const ThemeIcon = () => {
   }
 
   console.log("theme: ");
-  console.log(theme);
+  console.log(resolvedTheme);
 
   return (
-    <>{iconMap[theme]}</>
+    <>{iconMap[resolvedTheme]}</>
     // <div className="flex flex-col">
     //   <p>{theme}</p>
     //   <select value={theme} onChange={(e) => mySetTheme(e.target.value)}>
