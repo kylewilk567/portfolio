@@ -67,21 +67,13 @@ const ThemeIcon = () => {
     ),
   };
 
-  const iconOnClick = (event) => {
-    console.log(event);
-  };
-
-  const mySetTheme = (newValue) => {
-    setTheme(newValue);
-  };
-
   // useEffect only runs on the client, so now we can safely show the UI
   useEffect(() => {
     setMounted(true);
   }, []);
 
   if (!mounted) {
-    return null;
+    return <>{iconMap["light"]}</>;
   }
 
   return (

@@ -68,10 +68,10 @@ body {
     @apply bg-[#FAF9FF];
   }
   [class='dark'] .brand-nav-bg-color {
-    @apply bg-gray-900;
+    @apply bg-gray-950;
   }
   [class='stars'] .brand-nav-bg-color {
-    @apply bg-gray-900;
+    @apply bg-gray-950;
   }
 
   [class='light'] .brand-bg-color {

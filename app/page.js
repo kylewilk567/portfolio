@@ -5,7 +5,7 @@ export default function Home() {
   return (
     <div>
       <Nav />
-      <div className="sm:ml-44 relative h-screen bg-white items-center">
+      <div className="sm:ml-44 relative h-screen bg-white items-center overflow-hidden">
         <PageContent />
       </div>
     </div>
