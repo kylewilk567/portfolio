@@ -24,7 +24,7 @@ const PageContent = () => {
 
       <AnimatePresence mode="wait">
         <motion.div
-          className="absolute w-full h-full bg-white px-10"
+          className="absolute w-full h-full brand-bg-color px-10"
           key={activeSection}
           initial={{ x: "100%" }}
           animate={{ x: 0 }}

@@ -22,10 +22,17 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
   previousSection = previousSection.slice(1);
 
   const getStyles = (currentSection) => {
-    if (currentSection === activeSection || isHovered)
-      return "block pl-2 text-base no-underline text-gray-500 hover:text-gray-400 font-bold"; // Note: Left padding should be equal to div width for active section
-    else
-      return "block pl-3 text-base no-underline text-gray-500 hover:text-gray-400";
+    // Set defaults
+    let linkStyles =
+      "block text-base no-underline brand-nav-text-color hover:text-gray-400";
+
+    // Note: Left padding should be equal to div width for active section
+    if (currentSection === activeSection || isHovered) linkStyles += " pl-2";
+    else linkStyles += " pl-3";
+
+    if (currentSection === activeSection) linkStyles += " font-bold";
+
+    return linkStyles;
   };
 
   return (

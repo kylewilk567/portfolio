@@ -28,12 +28,62 @@ body {
     @apply bg-brand_purple hover:bg-brand_purple_hover active:bg-brand_purple_active;
   }
   [class='dark'] .btn {
-    @apply bg-brand_green hover:bg-brand_blue;
+    @apply bg-brand_purple hover:bg-brand_purple_hover active:bg-brand_purple_active;
   }
-  
   [class='stars'] .btn {
-    @apply bg-brand_red hover:bg-brand_green;
+    @apply bg-brand_purple hover:bg-brand_purple_hover active:bg-brand_purple_active;
   }
+
+  [class='light'] .icon-btn {
+    @apply fill-black hover:fill-gray-600 active:fill-gray-500;
+  }
+  [class='dark'] .icon-btn {
+    @apply fill-white hover:fill-gray-200 active:fill-gray-300;
+  }
+  [class='stars'] .icon-btn {
+    @apply fill-white hover:fill-gray-200 active:fill-gray-300;
+  }
+
+  [class='light'] .brand-text-color {
+    @apply text-black
+  }
+  [class='dark'] .brand-text-color {
+    @apply text-white;
+  }
+  [class='stars'] .brand-text-color {
+    @apply text-white;
+  }
+
+  [class='light'] .brand-nav-text-color {
+    @apply text-gray-500
+  }
+  [class='dark'] .brand-nav-text-color {
+    @apply text-gray-200
+  }
+  [class='stars'] .brand-nav-text-color {
+    @apply text-gray-200
+  }
+
+  [class='light'] .brand-nav-bg-color {
+    @apply bg-[#FAF9FF];
+  }
+  [class='dark'] .brand-nav-bg-color {
+    @apply bg-gray-900;
+  }
+  [class='stars'] .brand-nav-bg-color {
+    @apply bg-gray-900;
+  }
+
+  [class='light'] .brand-bg-color {
+    @apply bg-white;
+  }
+  [class='dark'] .brand-bg-color {
+    @apply bg-gray-700;
+  }
+  [class='stars'] .brand-bg-color {
+    @apply bg-gray-700;
+  }
+
 }
 
 

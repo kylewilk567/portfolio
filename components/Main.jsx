@@ -29,7 +29,7 @@ const Main = () => {
 
   return (
     <>
-      <p className="font-bold text-4xl pt-24 pb-8">
+      <p className="brand-text-color font-bold text-4xl pt-24 pb-8">
         Hi, I&rsquo;m&nbsp;
         <span className="font-bold text-brand_purple">
           {mainPageContent.name}
@@ -38,7 +38,7 @@ const Main = () => {
       </p>
 
       <div className="flex pb-6">
-        <p className="text-2xl font-bold">I am a&nbsp;</p>
+        <p className="text-2xl font-bold brand-text-color">I am a&nbsp;</p>
         <div className="font-bold text-brand_purple flex items-center">
           <TypeAnimation
             preRenderFirstString={true}
