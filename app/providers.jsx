@@ -17,6 +17,7 @@ export function Providers({ children }) {
     <ThemeProvider
       attribute="class"
       disableTransitionOnChange
+      enableSystem={false}
       themes={["light", "dark", "stars"]}
     >
       {children}
