@@ -7,8 +7,6 @@ import Main from "./Main";
 import useHash from "@/hooks/useHash";
 import { TypeAnimation } from "react-type-animation";
 
-// TODO: How to add images?? - images are retrieved on the serverside, but we only know what images to retrieve based on clientside path. It seems we need to load all images all the time due to this.
-
 const PageContent = () => {
   let { currentHash: activeSection, previousHash: previousSection } = useHash();
   activeSection = activeSection.slice(1);

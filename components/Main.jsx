@@ -37,7 +37,7 @@ const Main = () => {
         !
       </p>
 
-      <div className="flex pb-6">
+      <div className="pb-6 sm:flex hidden">
         <p className="text-2xl font-bold brand-text-color">I am a&nbsp;</p>
         <div className="font-bold text-brand_purple flex items-center">
           <TypeAnimation

@@ -4,12 +4,17 @@ import { navLinks, backgroundColorMap, fillColorMap } from "@/constants";
 import headshot from "@/public/assets/headshot.jpg";
 import NavLink from "./NavLink";
 import ThemeIcon from "./ThemeIcon";
+import MobileNav from "./MobileNav";
 
 const Nav = () => {
   return (
     <>
       {/* // Mobile Navigation */}
-      <div className="sm:hidden flex"></div>
+      <MobileNav
+        navLinks={navLinks}
+        backgroundColorMap={backgroundColorMap}
+        fillColorMap={fillColorMap}
+      />
 
       {/* // PC navigation */}
       <div className="h-full w-44 fixed z-10 top-0 left-0 brand-nav-bg-color pt-6 hidden sm:block overflow-x-hidden">
@@ -39,7 +44,7 @@ const Nav = () => {
             />
           ))}
         </div>
-        {/* TODO: Center the items in this div */}
+
         <div className="absolute bottom-4 w-full">
           <div className="flex gap-4 justify-center">
             <a href="https://www.linkedin.com/in/kyle-wilkinson7/">
