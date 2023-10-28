@@ -2,7 +2,7 @@
 import useHash from "@/hooks/useHash";
 import React, { useState } from "react";
 
-const NavLink = ({ link, backgroundColor, fillColor }) => {
+const NavLink = ({ link, backgroundColor, fillColor, onClick }) => {
   link.icon.props.className = link.icon.props.className
     ? link.icon.props.className + " " + fillColor
     : fillColor;
@@ -46,7 +46,11 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
           <div className={`w-1 h-full z-20 ${backgroundColor}`} />
         )}
 
-        <a className={getStyles(link.id)} href={`#${link.id}`}>
+        <a
+          className={getStyles(link.id)}
+          href={`#${link.id}`}
+          onClick={onClick ? onClick : null}
+        >
           <span className="flex items-center gap-2">
             {link.icon}
             {link.title}

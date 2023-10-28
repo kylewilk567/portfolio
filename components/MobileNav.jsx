@@ -60,6 +60,7 @@ const MobileNav = ({ navLinks, backgroundColorMap, fillColorMap }) => {
             link={link}
             backgroundColor={backgroundColorMap[link.color]}
             fillColor={fillColorMap[link.color]}
+            onClick={() => setToggle(false)}
           />
         ))}
       </div>
