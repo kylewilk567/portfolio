@@ -43,6 +43,16 @@
     @apply fill-white hover:fill-gray-200 active:fill-gray-300;
   }
 
+  [class='light'] .nav-btn {
+    @apply brand-nav-bg-color hover:bg-[#F5F3FF] active:bg-[#F2EFFF];
+  }
+  [class='dark'] .nav-btn {
+    @apply brand-nav-bg-color hover:bg-gray-900 active:bg-gray-800;
+  }
+  [class='stars'] .nav-btn {
+    @apply brand-nav-bg-color hover:bg-gray-900 active:bg-gray-800;
+  }
+
   [class='light'] .brand-text-color {
     @apply text-black
   }

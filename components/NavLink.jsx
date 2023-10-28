@@ -24,7 +24,7 @@ const NavLink = ({ link, backgroundColor, fillColor }) => {
   const getStyles = (currentSection) => {
     // Set defaults
     let linkStyles =
-      "w-full h-full flex items-center text-base no-underline brand-nav-text-color hover:text-gray-400 hover:bg-gray-900";
+      "w-full h-full flex items-center text-base no-underline brand-nav-text-color nav-btn";
 
     // Note: Left padding should be equal to div width for active section
     if (currentSection === activeSection || isHovered) linkStyles += " pl-2";
