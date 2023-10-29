@@ -5,6 +5,7 @@ import ThemeIcon from "./ThemeIcon";
 
 const MobileNav = ({ navLinks, backgroundColorMap, fillColorMap }) => {
   const [toggle, setToggle] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
   const navRef = useRef(null);
   const linksRef = useRef(null);
 
@@ -20,6 +21,21 @@ const MobileNav = ({ navLinks, backgroundColorMap, fillColorMap }) => {
   };
 
   useEffect(() => {
+    const handleScroll = () => {
+      const scrollTop = window.scrollY;
+      if (scrollTop > 100) {
+        setScrolled(true);
+      } else {
+        setScrolled(false);
+      }
+    };
+
+    window.addEventListener("scroll", handleScroll);
+
+    return () => window.removeEventListener("scroll", handleScroll);
+  }, []);
+
+  useEffect(() => {
     document.addEventListener("click", handleOutsideClick);
 
     return () => {
@@ -29,8 +45,8 @@ const MobileNav = ({ navLinks, backgroundColorMap, fillColorMap }) => {
 
   return (
     <div
-      className={`sm:hidden flex h-8 brand-nav-bg-color ${
-        toggle ? "fixed top-0 left-0 w-full z-50" : ""
+      className={`sm:hidden flex h-8 brand-nav-bg-color fixed top-0 left-0 w-full z-50 ${
+        scrolled ? "brand-nav-bg-color" : "bg-transparent"
       }`}
       ref={navRef}
     >

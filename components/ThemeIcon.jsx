@@ -76,9 +76,6 @@ const ThemeIcon = () => {
     return <>{iconMap["light"]}</>;
   }
 
-  console.log("theme: ");
-  console.log(resolvedTheme);
-
   return (
     <>{iconMap[resolvedTheme]}</>
     // <div className="flex flex-col">
