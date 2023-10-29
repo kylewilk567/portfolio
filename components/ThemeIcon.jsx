@@ -2,10 +2,9 @@
 import React, { useEffect, useState } from "react";
 import { useTheme } from "next-themes";
 
-const ThemeIcon = () => {
+const ThemeIcon = ({ iconSize }) => {
   const [mounted, setMounted] = useState(false);
   const { resolvedTheme, setTheme } = useTheme();
-  const iconSize = 16;
 
   let iconMap = {
     light: (

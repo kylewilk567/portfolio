@@ -82,7 +82,7 @@ const Nav = () => {
             </a>
           </div>
           <div className="mt-4 flex justify-center">
-            <ThemeIcon />
+            <ThemeIcon iconSize={16} />
           </div>
         </div>
       </div>

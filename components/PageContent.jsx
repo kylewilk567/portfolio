@@ -14,7 +14,7 @@ const PageContent = () => {
 
   return (
     <>
-      <div className="absolute w-full h-full bg-white px-10">
+      <div id="previous" className="absolute w-full h-full bg-white px-10">
         {previousSection === "" && <Main />}
         {previousSection === "about" && <About />}
         {previousSection === "contact" && <Contact />}
@@ -28,6 +28,7 @@ const PageContent = () => {
           animate={{ x: 0 }}
           //   exit={{ x: '-100%' }}
           transition={{ type: "tween", duration: 0.5 }}
+          onAnimationComplete={() => {}}
         >
           {activeSection === "" && <Main />}
           {activeSection === "about" && <About />}
