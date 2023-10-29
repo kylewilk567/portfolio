@@ -14,7 +14,10 @@ const PageContent = () => {
 
   return (
     <>
-      <div id="previous" className="absolute w-full h-full bg-white px-10">
+      <div
+        id="previous"
+        className="absolute w-full min-h-screen bg-white px-10"
+      >
         {previousSection === "" && <Main />}
         {previousSection === "about" && <About />}
         {previousSection === "contact" && <Contact />}
@@ -22,7 +25,7 @@ const PageContent = () => {
 
       <AnimatePresence mode="wait">
         <motion.div
-          className="absolute w-full h-full brand-bg-color px-10"
+          className="absolute w-full min-h-screen brand-bg-color px-10"
           key={activeSection}
           initial={{ x: "100%" }}
           animate={{ x: 0 }}
