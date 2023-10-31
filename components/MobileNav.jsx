@@ -70,7 +70,7 @@ const MobileNav = ({ navLinks, backgroundColorMap, fillColorMap }) => {
       >
         {navLinks.map((link) => (
           <NavLink
-            key={link}
+            key={link.id}
             link={link}
             backgroundColor={backgroundColorMap[link.color]}
             fillColor={fillColorMap[link.color]}

@@ -18,14 +18,10 @@ const PageContent = () => {
   };
 
   const handleAnimationComplete = () => {
-    console.log(previousSectionRef.current);
     if (previousSectionRef.current) {
-      console.log(previousSectionRef.current.style);
       if (previousSectionRef.current.style)
         previousSectionRef.current.style.display = "none";
       else previousSectionRef.current.style = { display: "none" };
-      console.log("styled");
-      console.log(previousSectionRef.current.style.display);
     }
   };
 
@@ -33,7 +29,7 @@ const PageContent = () => {
     <>
       <div
         id="previous"
-        className="absolute w-full min-h-screen bg-white px-10"
+        className="w-full min-h-screen bg-white px-10"
         ref={previousSectionRef}
       >
         {previousSection === "" && <Main />}
@@ -43,7 +39,7 @@ const PageContent = () => {
 
       <AnimatePresence mode="wait">
         <motion.div
-          className="absolute w-full min-h-screen brand-bg-color px-10"
+          className="w-full min-h-screen brand-bg-color px-10"
           key={activeSection}
           initial={{ x: "100%" }}
           // whileInView={{

@@ -37,7 +37,7 @@ const Nav = () => {
         <div className="pt-6">
           {navLinks.map((link) => (
             <NavLink
-              key={link}
+              key={link.id}
               link={link}
               backgroundColor={backgroundColorMap[link.color]}
               fillColor={fillColorMap[link.color]}
