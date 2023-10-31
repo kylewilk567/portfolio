@@ -66,7 +66,7 @@ const MobileNav = ({ navLinks, backgroundColorMap, fillColorMap }) => {
         ref={linksRef}
         className={`${
           toggle ? "block" : "hidden"
-        } absolute w-full h-screen top-8 left-0 brand-nav-bg-color sm:hidden z-10`}
+        } absolute w-full h-screen top-12 left-0 brand-nav-bg-color sm:hidden z-10`}
       >
         {navLinks.map((link) => (
           <NavLink
