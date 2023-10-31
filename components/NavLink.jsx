@@ -3,9 +3,11 @@ import useHash from "@/hooks/useHash";
 import React, { useState } from "react";
 
 const NavLink = ({ link, backgroundColor, fillColor, onClick }) => {
-  link.icon.props.className = link.icon.props.className
-    ? link.icon.props.className + " " + fillColor
-    : fillColor;
+  if (!link.icon.props.className) {
+    link.icon.props.className = fillColor;
+  } else if (!link.icon.props.className.includes(fillColor)) {
+    link.icon.props.className += ` ${fillColor}`;
+  }
 
   const [isHovered, setIsHovered] = useState(false);
 
