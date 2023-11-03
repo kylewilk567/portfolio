@@ -75,6 +75,32 @@ export const mainPageContent = {
   ],
 };
 
+export const technologies = {
+  figma: {
+    icon: "figma.png",
+    text: "Figma",
+  },
+  git: {
+    icon: "git.png",
+    text: "Git",
+  },
+  nextjs: {
+    icon: "nextjs.png",
+    text: "NextJS",
+  },
+};
+
+// High level overview of each project
+export const projects = [
+  {
+    name: "This Website!",
+    description:
+      "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS December '23)",
+    image: "headshot.jpg",
+    technologies: ["figma", "git", "nextjs"],
+  },
+];
+
 export const backgroundColorMap = {
   brand_purple: "bg-brand_purple",
   brand_green: "bg-brand_green",

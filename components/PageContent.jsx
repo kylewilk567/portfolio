@@ -5,7 +5,7 @@ import About from "./About";
 import Contact from "./Contact";
 import Main from "./Main";
 import useHash from "@/hooks/useHash";
-import { TypeAnimation } from "react-type-animation";
+import Projects from "./Projects";
 
 const PageContent = () => {
   const previousSectionRef = useRef(null);
@@ -34,6 +34,7 @@ const PageContent = () => {
       >
         {previousSection === "" && <Main />}
         {previousSection === "about" && <About />}
+        {previousSection === "projects" && <Projects />}
         {previousSection === "contact" && <Contact />}
       </div>
 
@@ -59,6 +60,7 @@ const PageContent = () => {
         >
           {activeSection === "" && <Main />}
           {activeSection === "about" && <About />}
+          {activeSection === "projects" && <Projects />}
           {activeSection === "contact" && <Contact />}
         </motion.div>
       </AnimatePresence>
