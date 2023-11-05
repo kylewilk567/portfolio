@@ -4,7 +4,7 @@ import Header from "./Header";
 const About = () => {
   return (
     <>
-      <Header title="About" />
+      <Header title="About Me" />
     </>
   );
 };
