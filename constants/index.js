@@ -79,14 +79,17 @@ export const technologies = {
   figma: {
     icon: "figma.png",
     text: "Figma",
+    url: "google.com",
   },
   git: {
     icon: "git.png",
     text: "Git",
+    url: "google.com",
   },
   nextjs: {
     icon: "nextjs.png",
     text: "NextJS",
+    url: "google.com",
   },
 };
 
@@ -96,8 +99,9 @@ export const projects = [
     name: "This Website!",
     description:
       "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS December '23)",
-    image: "headshot.jpg",
+    image: "/assets/projects/pathfinding_api/Mesa_heading_square.png",
     technologies: ["figma", "git", "nextjs"],
+    href: "portfolio",
   },
 ];
 

@@ -9,6 +9,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      height: {
+        128: "32rem",
+      },
       colors: {
         brand_purple: "#615BEF",
         brand_purple_hover: "#5953E2",
