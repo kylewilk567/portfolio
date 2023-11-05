@@ -91,6 +91,11 @@ export const technologies = {
     text: "NextJS",
     url: "google.com",
   },
+  tailwind: {
+    icon: "tailwind.png",
+    text: "TailwindCSS",
+    url: "google.com",
+  },
 };
 
 // High level overview of each project
@@ -100,7 +105,7 @@ export const projects = [
     description:
       "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS December '23)",
     image: "/assets/projects/pathfinding_api/Mesa_heading_square.png",
-    technologies: ["figma", "git", "nextjs"],
+    technologies: ["figma", "git", "nextjs", "tailwind"],
     href: "portfolio",
   },
 ];
