@@ -101,6 +101,31 @@ export const technologies = {
 // High level overview of each project
 export const projects = [
   {
+    name: "Sign Language Glove - Embedded Systems",
+    description:
+      "Glove that uses flex sensors, hall effect sensors, and an IMU to detect ASL gestures and transmit translations wirelessly to LCD display.",
+    image: "/assets/projects/sign_language_glove/Glove_cropped_square.jpg",
+    technologies: ["figma", "git", "nextjs", "tailwind"],
+    href: "glove",
+  },
+  {
+    name: "3D Pathfinding - Personal Project",
+    description:
+      "Implemented pathfinding algorithms in Minecraft to optimize and automate navigation in 3D environments.",
+    image: "/assets/projects/pathfinding_api/Mesa_heading_square.png",
+    technologies: ["git"],
+    href: "pathfinding",
+  },
+  {
+    name: "Little Free Pantry - Boy Scouts",
+    description:
+      "Built and installed three Little Free Pantries at local elementary schools to fight food insecurity",
+    image: "/assets/projects/eagle_scout/Eagle_final2.jpg",
+    technologies: [],
+    href: "eagle-project",
+  },
+
+  {
     name: "This Website!",
     description:
       "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS December '23)",
