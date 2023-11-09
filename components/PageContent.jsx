@@ -6,6 +6,7 @@ import Contact from "./Contact";
 import Main from "./Main";
 import useHash from "@/hooks/useHash";
 import Projects from "./Projects";
+import Pathfinding from "./Pathfinding";
 
 const PageContent = () => {
   const previousSectionRef = useRef(null);
@@ -36,6 +37,7 @@ const PageContent = () => {
         {previousSection === "about" && <About />}
         {previousSection === "projects" && <Projects />}
         {previousSection === "contact" && <Contact />}
+        {previousSection === "pathfinding" && <Pathfinding />}
       </div>
 
       <AnimatePresence mode="wait">
@@ -62,6 +64,7 @@ const PageContent = () => {
           {activeSection === "about" && <About />}
           {activeSection === "projects" && <Projects />}
           {activeSection === "contact" && <Contact />}
+          {activeSection === "pathfinding" && <Pathfinding />}
         </motion.div>
       </AnimatePresence>
     </>
