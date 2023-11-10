@@ -23,26 +23,17 @@ const Pathfinding = () => {
           className="absolute top-1 right-4"
         />
       </div>
-      <div className="grid grid-cols-1 xl:grid-cols-3 mt-4">
-        <div className="xl:col-span-1 flex flex-col justify-between">
-          <Image
-            src="/assets/projects/pathfinding_api/top_view_mesa.gif"
-            alt="top_view"
-            width="0"
-            height="0"
-            layout="responsive"
-            className="pr-4 max-w-md"
-          />
-          <Image
-            src="/assets/projects/pathfinding_api/village_path.gif"
-            alt="top_view"
-            width="0"
-            height="0"
-            layout="responsive"
-            className="pr-4 mt-4 max-w-md"
-          />
-        </div>
 
+      {/* Smaller screen content */}
+      <div className="flex xl:hidden flex-col mt-4 items-center">
+        <Image
+          src="/assets/projects/pathfinding_api/top_view_mesa.gif"
+          alt="top_view"
+          width="0"
+          height="0"
+          layout="responsive"
+          className="max-w-md mb-4"
+        />
         <p className="xl:col-span-2">
           This project represents my exploration of pathfinding solutions within
           a 3D environment, specifically Minecraft. The objective was to
@@ -57,15 +48,111 @@ const Pathfinding = () => {
           considering both the actual cost of reaching a point and a heuristic
           estimate of the remaining cost to the destination. The second solution
           adopts a greedy algorithm, which provides a suboptimal path in less
-          time. A time comparison between the two revealed that A* is not
-          suitable due to its speed limitations. <br />
-          <br />
+          time. A time comparison between the two (shown below) revealed that A*
+          is not suitable due to its speed limitations. <br />
+        </p>
+        {/* <Image
+          src="/assets/projects/pathfinding_api/Pathfinder.gif"
+          alt="top_view"
+          width="0"
+          height="0"
+          layout="responsive"
+          className="max-w-md my-2"
+        /> */}
+        <br />
+        <p>
           To enhance the greedy algorithm&apos;s shortcomings, a post-processing
           step was introduced, allowing manual adjustments to the path after its
           initial discovery. This project showcases my commitment to optimizing
           pathfinding in complex 3D environments, addressing a range of
           real-world applications.
         </p>
+      </div>
+
+      {/* Extra large screen content */}
+      <div className="hidden xl:block mt-4">
+        <div className="grid grid-cols-3">
+          <div className="col-span-1 flex flex-col justify-between">
+            <Image
+              src="/assets/projects/pathfinding_api/top_view_mesa.gif"
+              alt="top_view"
+              width="0"
+              height="0"
+              layout="responsive"
+              className="pr-4 max-w-md mx-auto"
+            />
+            <Image
+              src="/assets/projects/pathfinding_api/village_path.gif"
+              alt="top_view"
+              width="0"
+              height="0"
+              layout="responsive"
+              className="pr-4 mt-4 max-w-md mx-auto"
+            />
+          </div>
+
+          <p className="col-span-2 max-w-3xl mx-auto">
+            This project represents my exploration of pathfinding solutions
+            within a 3D environment, specifically Minecraft. The objective was
+            to efficiently discover short paths across extensive areas. This
+            endeavor holds versatile applications, including facilitating
+            navigation in RPG adventure maps, enhancing mob AI, improving
+            transportation, and streamlining automated base planning and
+            construction. <br />
+            <br />
+            The project involved researching various pathfinding solutions, with
+            a focus on two implementations. The first solution employs the A*
+            (A-star) algorithm, which efficiently finds the shortest path by
+            considering both the actual cost of reaching a point and a heuristic
+            estimate of the remaining cost to the destination. The second
+            solution adopts a greedy algorithm, which provides a suboptimal path
+            in less time. A time comparison between the two revealed that A* is
+            not suitable due to its speed limitations. <br />
+            <br />
+            To enhance the greedy algorithm&apos;s shortcomings, a
+            post-processing step was introduced, allowing manual adjustments to
+            the path after its initial discovery. This project showcases my
+            commitment to optimizing pathfinding in complex 3D environments,
+            addressing a range of real-world applications.
+          </p>
+        </div>
+        <div className="grid grid-cols-3 mt-4 gap-4">
+          <div className="col-span-1 flex flex-col max-w-md mx-auto">
+            <Image
+              src="/assets/projects/pathfinding_api/path_opt.gif"
+              alt="top_view"
+              width="0"
+              height="0"
+              layout="responsive"
+              className="mx-auto"
+            />
+            <p>
+              Path post-processing optimizes length if a shorter route is found
+            </p>
+          </div>
+
+          <div className="col-span-2 flex flex-col max-w-3xl mx-auto">
+            <Image
+              src="/assets/projects/pathfinding_api/Pathfinder.gif"
+              alt="top_view"
+              width="0"
+              height="0"
+              layout="responsive"
+              className="mx-auto"
+            />
+            <p>
+              <span className="text-red-400 font-bold">A* algorithm</span>{" "}
+              (left) takes{" "}
+              <span className="text-red-400 font-bold">2027ms</span> to find the
+              shortest path while{" "}
+              <span className="text-lime-500 font-bold">Greedy algorithm</span>{" "}
+              (right) takes{" "}
+              <span className="text-lime-500 font-bold">90ms</span> to find
+              slightly suboptimal solution. A* takes too long to be useful, so
+              greedy implementation is used.
+            </p>
+          </div>
+        </div>
       </div>
     </>
   );
