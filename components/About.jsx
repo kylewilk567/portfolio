@@ -4,7 +4,9 @@ import Header from "./Header";
 const About = () => {
   return (
     <>
-      <Header title="About Me" />
+      <div className="mx-auto">
+        <Header title="About Me" />
+      </div>
     </>
   );
 };

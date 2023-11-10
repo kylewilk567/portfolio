@@ -6,7 +6,9 @@ import { projects, technologies } from "@/constants";
 const Projects = () => {
   return (
     <>
-      <Header title="Projects and Leadership" />
+      <div className="mx-auto">
+        <Header title="Projects and Leadership" />
+      </div>
 
       <div className="flex flex-wrap gap-x-1 gap-y-4 mt-4 sm:justify-between justify-center">
         {projects.map((uninitializedProject) => {

@@ -4,7 +4,11 @@ import Header from "./Header";
 
 const Contact = () => {
   const { theme, setTheme } = useTheme();
-  return <Header title="Contact Me" />;
+  return (
+    <div className="mx-auto">
+      <Header title="Contact Me" />
+    </div>
+  );
 };
 
 export default Contact;
