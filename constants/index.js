@@ -117,6 +117,14 @@ export const projects = [
     href: "pathfinding",
   },
   {
+    name: "MTouch - University of Michigan",
+    description:
+      "A cost-effective 3D printing defect detection system, using an actuated contact probe, identifies millimeter-scale defects with near 100% accuracy, outperforming commercial alternatives in fault detection speed and coverage.",
+    image: "/assets/projects/mtouch/MTouch.jpg",
+    technologies: ["git"],
+    href: "mtouch",
+  },
+  {
     name: "Little Free Pantry - Boy Scouts",
     description:
       "Built and installed three Little Free Pantries at local elementary schools to fight food insecurity",

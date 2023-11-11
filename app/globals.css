@@ -93,6 +93,16 @@
     @apply bg-gray-700;
   }
 
+  [class='light'] .brand-caption {
+    @apply text-sm;
+  }
+  [class='dark'] .brand-caption {
+    @apply text-sm;
+  }
+  [class='stars'] .brand-caption {
+    @apply text-sm;
+  }
+
   }
 
 
