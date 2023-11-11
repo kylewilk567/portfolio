@@ -96,6 +96,27 @@ export const technologies = {
     text: "TailwindCSS",
     url: "google.com",
   },
+
+  hammer: {
+    icon: "hammer.png",
+    text: "Hammer",
+    url: null,
+  },
+  shovel: {
+    icon: "shovel.png",
+    text: "Shovel",
+    url: null,
+  },
+  hands: {
+    icon: "hands.png",
+    text: "Hands",
+    url: null,
+  },
+  collaboration: {
+    icon: "collaboration.png",
+    text: "Collaboration",
+    url: null,
+  },
 };
 
 // High level overview of each project
@@ -129,7 +150,7 @@ export const projects = [
     description:
       "Built and installed three Little Free Pantries at local elementary schools to fight food insecurity",
     image: "/assets/projects/eagle_scout/Eagle_final2.jpg",
-    technologies: [],
+    technologies: ["hammer", "shovel", "hands", "collaboration"],
     href: "eagle-project",
   },
 
