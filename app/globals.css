@@ -103,6 +103,23 @@
     @apply text-sm;
   }
 
+  [class='light'] .brand-circle-progress {
+    background: conic-gradient(
+    from 0deg,
+    #3498db 0%,
+    #1abc9c 60%,
+    #ccc 60%,
+    #ccc 100%
+  );
+  }
+  [class='dark'] .brand-circle-progress {
+    background: conic-gradient(from #3498db 0%, #1abc9c 75%, #ccc 75%, #ccc 100%);
+  }
+  [class='stars'] .brand-circle-progress {
+    background: conic-gradient(from #3498db 0%, #1abc9c 75%, #ccc 75%, #ccc 100%);
+}
+
+
   }
 
 
