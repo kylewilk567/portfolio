@@ -96,7 +96,6 @@ export const technologies = {
     text: "TailwindCSS",
     url: "google.com",
   },
-
   hammer: {
     icon: "hammer.png",
     text: "Hammer",
@@ -117,6 +116,19 @@ export const technologies = {
     text: "Collaboration",
     url: null,
   },
+};
+
+export const aboutPageContent = {
+  skills: [
+    {
+      technology: technologies["git"],
+      skillLevel: 80,
+    },
+    {
+      technology: technologies["figma"],
+      skillLevel: 40,
+    },
+  ],
 };
 
 // High level overview of each project

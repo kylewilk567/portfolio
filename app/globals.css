@@ -103,24 +103,32 @@
     @apply text-sm;
   }
 
-  [class='light'] .brand-circle-progress {
-    background: conic-gradient(
-    from 0deg,
-    #3498db 0%,
-    #1abc9c 60%,
-    #ccc 60%,
-    #ccc 100%
-  );
+  /* TODO: Update color for line and icon container border below */
+    /* The line */
+  [class='light'] .vertical-timeline.vertical-timeline-custom-line::before {
+    @apply bg-black;
   }
-  [class='dark'] .brand-circle-progress {
-    background: conic-gradient(from #3498db 0%, #1abc9c 75%, #ccc 75%, #ccc 100%);
+  [class='dark'] .vertical-timeline.vertical-timeline-custom-line::before {
+    @apply bg-white;
   }
-  [class='stars'] .brand-circle-progress {
-    background: conic-gradient(from #3498db 0%, #1abc9c 75%, #ccc 75%, #ccc 100%);
-}
+  [class='stars'] .vertical-timeline.vertical-timeline-custom-line::before {
+    @apply bg-white;
+  }
+
+/* Icon container's border */
+  [class='light'] .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #000000, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+  [class='dark'] .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+  [class='stars'] .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
+    box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+  }
+
+  }
 
 
-  }
 
 
 
