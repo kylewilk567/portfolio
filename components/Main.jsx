@@ -71,16 +71,6 @@ const Main = () => {
           />
         </div>
       </div>
-      <p className="text-lg">
-        afeafj;alfe;alkefj;aa feafeaf a fea af aef afeafj;alfe;alkefj;aa feafeaf
-        a fea af aef afeafj;alfe;alkefj;aa feafeaf a fea af aef
-        afeafj;alfe;alkefj;aa feafeaf a fea af aef afeafj;alfe;alkefj;aa feafeaf
-        a fea af aef afeafj;alfe;alkefj;aa feafeaf a fea af
-        aefafeafj;alfe;alkefj;aa feafeaf a fea af aef afeafj;alfe;alkefj;aa
-        feafeaf a fea af aef afeafj;alfe;alkefj;aa feafeaf a fea af aef
-        afeafj;alfe;alkefj;aa feafeaf a fea af aef afeafj;alfe;alkefj;aa feafeaf
-        a fea af aef afeafj;alfe;alkefj;aa feafeaf a fea af aef end
-      </p>
     </>
   );
 };

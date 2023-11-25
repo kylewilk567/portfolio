@@ -39,10 +39,11 @@ const Experience = () => {
         visible={true}
         icon={
           <Image
-            src="/assets/about/ford.png"
+            src="/assets/about/ford.svg"
             alt="image"
-            layout="fill"
-            objectFit="contain"
+            width="0"
+            height="0"
+            className="object-contain w-full h-full"
           />
         }
       >

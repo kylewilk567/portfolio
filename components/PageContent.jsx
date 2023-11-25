@@ -17,6 +17,11 @@ const PageContent = () => {
 
   const handleAnimationStart = () => {
     window.scrollTo(0, 0);
+    // if (previousSectionRef.current) {
+    //   if (previousSectionRef.current.style)
+    //     previousSectionRef.current.style.display = "block";
+    //   else previousSectionRef.current.style = { display: "block" };
+    // }
   };
 
   const handleAnimationComplete = () => {
@@ -31,7 +36,7 @@ const PageContent = () => {
     <>
       <div
         id="previous"
-        className="w-full min-h-screen bg-white px-10"
+        className="w-full min-h-screen brand-bg-color px-10"
         ref={previousSectionRef}
       >
         {previousSection === "" && <Main />}

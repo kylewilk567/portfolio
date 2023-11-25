@@ -90,7 +90,7 @@
     @apply bg-gray-700;
   }
   [class='stars'] .brand-bg-color {
-    @apply bg-gray-700;
+    @apply bg-none; /* Uses animated aurora div effect for background */
   }
 
   [class='light'] .brand-caption {
@@ -137,6 +137,71 @@
   .vertical-timeline-element-subtitle {
     @apply text-lg mb-4;
   }
+  
+  
+  @keyframes fly {
+    100% {
+      transform:rotate(360deg) translate(100px) rotate(-360deg) translate(-100px);
+    }
+  }
+  
+  @keyframes flyPlus {
+    100% {
+      transform:rotate(-1turn) rotate(1turn);
+    }
+  }
+  
+  .wrapper {
+    background: #fff;
+    position: relative;
+    overflow:hidden;
+  }
+  
+  .base {
+    position: absolute;
+    filter: blur(60px);
+    opacity: 0.8;
+    visibility: hidden;
+  }
+
+  [class='stars'] .base {
+    visibility: visible;
+  }
+  
+  .one {
+    border-radius: 100%;
+    width: 150%;
+    height: 150%;
+    background-color: #373372;
+    left:100px;
+    top:-450px;
+    z-index: 3;
+    animation: fly 12s linear infinite;
+    transform:rotate(0) translate(120px) rotate(0) translate(-120px);
+  }
+  
+  .two {
+    width: 125%;
+    height: 200%;
+    background-color: #40E0D0;
+    bottom:-60px;
+    left:-100px;
+    z-index: 2;
+  }
+  
+  .three {
+    border-radius: 100%;
+    width: 112%;
+    height: 112%;
+    bottom:-88px;
+    right:-112px;
+    z-index: 2;
+    background-color: #00FF00;
+    animation: flyPlus 8s linear infinite;
+    transform:rotate(0) translate(100px) rotate(0) translate(-100px);
+  }
+  
+  
   
 
   }
