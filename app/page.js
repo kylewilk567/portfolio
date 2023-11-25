@@ -6,9 +6,11 @@ export default function Home() {
     <div>
       <Nav />
       <div className="sm:ml-44 mt-12 sm:mt-0 relative min-h-screen bg-white items-center overflow-x-hidden">
-        <div className="base one"></div>
-        <div className="base two"></div>
-        <div className="base three"></div>
+        <div className="absolute overflow-hidden w-full h-full">
+          <div className="base one"></div>
+          <div className="base two"></div>
+          <div className="base three"></div>
+        </div>
         <div className="relative z-20">
           <PageContent />
         </div>

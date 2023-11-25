@@ -150,22 +150,18 @@
       transform:rotate(-1turn) rotate(1turn);
     }
   }
-  
-  .wrapper {
-    background: #fff;
-    position: relative;
-    overflow:hidden;
-  }
-  
+    
   .base {
     position: absolute;
     filter: blur(60px);
     opacity: 0.8;
     visibility: hidden;
+    display: none;
   }
 
   [class='stars'] .base {
     visibility: visible;
+    display: block;
   }
   
   .one {
