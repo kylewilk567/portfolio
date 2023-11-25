@@ -14,7 +14,7 @@ const ProjectCard = ({ project }) => {
             // layout="fill"
             fill
             // objectFit="cover"
-            sizes="100vw"
+            sizes="256px"
             className="object-cover"
           />
         </div>
