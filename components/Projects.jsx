@@ -10,7 +10,7 @@ const Projects = () => {
         <Header title="Projects and Leadership" />
       </div>
 
-      <div className="flex flex-wrap gap-x-1 gap-y-4 mt-4 sm:justify-between justify-center">
+      <div className="flex flex-wrap gap-4 mt-4 justify-center">
         {projects.map((uninitializedProject) => {
           // Replace the technology strings with their respective objects from the technologies list
           const updatedTechnologies = uninitializedProject.technologies.map(

@@ -126,6 +126,19 @@
     box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
 
+  .vertical-timeline.vertical-timeline-custom-line {
+    margin: 0 0;
+  }
+
+  .vertical-timeline-element-title {
+    @apply text-2xl font-bold mb-2;
+  }
+
+  .vertical-timeline-element-subtitle {
+    @apply text-lg mb-4;
+  }
+  
+
   }
 
 

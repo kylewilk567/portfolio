@@ -13,18 +13,28 @@ const About = () => {
         <div>
           <div className="flex flex-col">
             <div className="flex flex-col">
-              <h2>Education</h2>
-              <div className="drop-shadow-md hover:drop-shadow-xl brand-nav-bg-color w-64 h-128 rounded-md overflow-hidden">
-                Content here
+              <h2 className="font-bold text-2xl my-4">Education</h2>
+              <div className="shadow-[0_3px_0_#ddd] brand-nav-bg-color rounded-md overflow-hidden flex flex-col p-8 w-[95%] max-w-[1170px]">
+                <h1 className="text-2xl font-bold flex">
+                  University of Michigan - College of Engineering
+                </h1>
+                <h2 className="text-lg text-gray-600 flex">Ann Arbor, MI</h2>
+                <p className="mb-2 flex">May 2023</p>
+                <p className="mb-2 flex">
+                  B.S.E. in Computer Science, Minor in Electrical Engineering
+                </p>
+                <p className="text-green-600 font-semibold flex">
+                  Summa Cum Laude
+                </p>
               </div>
             </div>
             <div className="flex flex-col">
-              <h2>Experience</h2>
+              <h2 className="font-bold text-2xl my-4">Experience</h2>
               <Experience />
             </div>
           </div>
         </div>
-        <div className="">
+        <div className="flex flex-wrap gap-4 mt-4 sm:justify-start justify-center">
           {aboutPageContent.skills.map((skill) => (
             <Skill
               key={"Skill" + skill.technology.text}
