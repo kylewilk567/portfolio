@@ -11,9 +11,7 @@ const ProjectCard = ({ project }) => {
           <Image
             src={project.image}
             alt="image"
-            // layout="fill"
             fill
-            // objectFit="cover"
             sizes="256px"
             className="object-cover"
           />
