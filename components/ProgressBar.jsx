@@ -15,11 +15,14 @@ const ProgressBar = ({ progress }) => {
   };
 
   return (
-    <div className="w-full h-8 bg-gray-300 rounded-md overflow-hidden">
+    <div className="relative w-full h-8 bg-gray-300 rounded-md overflow-hidden">
       <div
         style={progressStyle}
-        className="h-full transition-all duration-300"
+        className="h-full transition-all duration-300 relative"
       ></div>
+      <div className="absolute text-black font-semibold top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-20">
+        {progress}%
+      </div>
     </div>
   );
 };
