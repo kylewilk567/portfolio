@@ -150,9 +150,44 @@ export const technologies = {
     text: "NextJS",
     url: "google.com",
   },
+  reactjs: {
+    icon: "reactjs.png",
+    text: "React",
+    url: "google.com",
+  },
+  java: {
+    icon: "java.png",
+    text: "Java",
+    url: "google.com",
+  },
+  cpp: {
+    icon: "cpp.svg",
+    text: "C++",
+    url: "google.com",
+  },
+  c: {
+    icon: "c.png",
+    text: "C",
+    url: "google.com",
+  },
+  python: {
+    icon: "python.svg",
+    text: "Python",
+    url: "google.com",
+  },
   tailwind: {
     icon: "tailwind.png",
     text: "TailwindCSS",
+    url: "google.com",
+  },
+  sql: {
+    icon: "sql.svg",
+    text: "SQL",
+    url: "google.com",
+  },
+  aws: {
+    icon: "aws.svg",
+    text: "AWS",
     url: "google.com",
   },
   hammer: {
@@ -186,6 +221,42 @@ export const aboutPageContent = {
     {
       technology: technologies["figma"],
       skillLevel: 40,
+    },
+    {
+      technology: technologies["java"],
+      skillLevel: 90,
+    },
+    {
+      technology: technologies["cpp"],
+      skillLevel: 55,
+    },
+    {
+      technology: technologies["c"],
+      skillLevel: 70,
+    },
+    {
+      technology: technologies["python"],
+      skillLevel: 60,
+    },
+    {
+      technology: technologies["reactjs"],
+      skillLevel: 60,
+    },
+    {
+      technology: technologies["nextjs"],
+      skillLevel: 70,
+    },
+    {
+      technology: technologies["tailwind"],
+      skillLevel: 70,
+    },
+    {
+      technology: technologies["sql"],
+      skillLevel: 80,
+    },
+    {
+      technology: technologies["aws"],
+      skillLevel: 50,
     },
   ],
 };

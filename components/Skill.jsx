@@ -9,9 +9,10 @@ const Skill = ({ imgSource, label, progress }) => {
       <Image
         src={imgSource}
         alt={`Skill: ${label}`}
-        width={96}
-        height={96}
-        className="mb-2"
+        width={0}
+        height={0}
+        sizes="96px"
+        className="mb-2 object-contain w-24 h-24"
       />
       <p className="text-lg font-semibold mb-2">{label}</p>
       <ProgressBar progress={progress} />
