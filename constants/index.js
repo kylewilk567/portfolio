@@ -75,6 +75,65 @@ export const mainPageContent = {
   ],
 };
 
+export const experiences = [
+  {
+    title: "Software Engineer",
+    company: "Ford Motor Company",
+    date: "September 2023 - Present",
+    image: "/assets/about/ford.svg",
+    tasks: [
+      "Create and test API endpoints using Java Springboot, OpenAPI, and 42Crunch to facilitate scheduling of vehicle manufacturing at different Ford plants",
+      "Prototyped an idea to streamline sharing and management of information using React and TailwindCSS for FCG Hackathon",
+    ],
+  },
+  {
+    title: "R&D Product Information Intern",
+    company: "FANUC America Corporation",
+    date: "May 2022 – August 2022",
+    image: "/assets/about/fanuc.svg",
+    tasks: [
+      "Streamlined common procedures leading to an estimated 70%-time-reduction in publishing manuals",
+      "Worked directly with users to find inefficiencies with information management tool to incorporate fixes that suit their needs",
+      "Modified user interface using VB.NET to be intuitive to reduce user error",
+      "Used Git to manage several releases of information management tool for faster project turnaround times",
+      "Created SQL procedures and triggers to develop a source control system for multiple database tables",
+    ],
+  },
+  {
+    title: "Research Assistant (Fault Prediction for FFF 3D Printing)",
+    company: "University of Michigan",
+    date: "September 2021 – January 2022",
+    image: "/assets/about/michigan.svg",
+    tasks: [
+      "Developed a neural network using PyTorch that can predict a layer-shift fault with over 99% accuracy to allow users to adjust printer settings before a fault occurs and save time and money",
+      "Designed and implemented a data collection system that allows tests to be done four times faster",
+    ],
+  },
+  {
+    title: "Research Assistant (Automatic Fault Detection for FFF 3D Printing)",
+    company: "University of Michigan",
+    date: "May 2021 – September 2021",
+    image: "/assets/about/michigan.svg",
+    tasks: [
+      "Created algorithms to detect faults using real-time data and touch-probe sensor",
+      "Used multi-processing to allow for sample-point generation and 3D printing concurrently with Python",
+      "Created an advanced, user-friendly interface using HTML, CSS, JavaScript, Bootstrap, and Knockout",
+    ],
+  },
+  {
+    title: "Game Owner / Developer",
+    company: "Game Development (Personal Projects)",
+    date: "April 2020 – August 2023",
+    image: "/assets/about/kwilk.svg",
+    tasks: [
+      "Program software for Minecraft using Java and work with clients to create programs that meet their needs",
+      "Guide aspiring Java developers in creating software for a Minecraft server by giving code reviews and making sure the team is on track to meet deadlines",
+      "Design a pathfinding algorithm that generates roads automatically in a 3D space while making efficient use of memory",
+      "Integrate MySQL databases with software allowing organized data storage and faster data queries",
+    ],
+  },
+];
+
 export const technologies = {
   figma: {
     icon: "figma.png",
