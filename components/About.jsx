@@ -1,7 +1,7 @@
 "use client";
 import React from "react";
 import Header from "./Header";
-import { aboutPageContent } from "@/constants";
+import { aboutPageContent, categories } from "@/constants";
 import Skill from "./Skill";
 import Experience from "./Experience";
 
@@ -34,15 +34,34 @@ const About = () => {
             </div>
           </div>
         </div>
-        <div className="flex flex-wrap gap-4 mt-4 sm:justify-start justify-center">
-          {aboutPageContent.skills.map((skill) => (
-            <Skill
-              key={"Skill" + skill.technology.text}
-              imgSource={`/assets/tech/${skill.technology.icon}`}
-              label={skill.technology.text}
-              progress={skill.skillLevel}
-            />
-          ))}
+
+        <div className="flex flex-col">
+          <h2 className="font-bold text-2xl my-4">Skills</h2>
+          {categories.map((category) => {
+            const skillsInCategory = aboutPageContent.skills.filter(
+              (skill) => skill.technology.category === category
+            );
+
+            if (skillsInCategory.length > 0) {
+              return (
+                <div key={`Category${category}`}>
+                  <h2 className="font-semibold text-xl my-4">{category}</h2>
+                  <div className="flex flex-wrap gap-4 justify-start">
+                    {skillsInCategory.map((skill) => (
+                      <Skill
+                        key={`Skill${skill.technology.text}`}
+                        imgSource={`/assets/tech/${skill.technology.icon}`}
+                        label={skill.technology.text}
+                        progress={skill.skillLevel}
+                      />
+                    ))}
+                  </div>
+                </div>
+              );
+            }
+
+            return null; // Do not render the category if there are no skills in it
+          })}
         </div>
       </div>
     </>

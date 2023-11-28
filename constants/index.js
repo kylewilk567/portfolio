@@ -134,81 +134,108 @@ export const experiences = [
   },
 ];
 
+export const categories = [
+  "Programming Languages",
+  "Frontend Development",
+  "Frameworks/Libraries",
+  "Databases",
+  "Cloud Services",
+  "Build Tools",
+  "Mobile Development",
+  "Testing",
+  "Other",
+];
+
 export const technologies = {
   figma: {
     icon: "figma.png",
     text: "Figma",
     url: "google.com",
+    category: "Other",
   },
   git: {
     icon: "git.png",
     text: "Git",
     url: "google.com",
+    category: "Other",
   },
   nextjs: {
     icon: "nextjs.png",
     text: "NextJS",
     url: "google.com",
+    category: "Frameworks/Libraries",
   },
   reactjs: {
     icon: "reactjs.png",
     text: "React",
     url: "google.com",
+    category: "Frameworks/Libraries",
   },
   java: {
     icon: "java.png",
     text: "Java",
     url: "google.com",
+    category: "Programming Languages",
   },
   cpp: {
     icon: "cpp.svg",
     text: "C++",
     url: "google.com",
+    category: "Programming Languages",
   },
   c: {
     icon: "c.png",
     text: "C",
     url: "google.com",
+    category: "Programming Languages",
   },
   python: {
     icon: "python.svg",
     text: "Python",
     url: "google.com",
+    category: "Programming Languages",
   },
   tailwind: {
     icon: "tailwind.png",
     text: "TailwindCSS",
     url: "google.com",
+    category: "Frameworks/Libraries",
   },
   sql: {
     icon: "sql.svg",
     text: "SQL",
     url: "google.com",
+    category: "Databases",
   },
   aws: {
     icon: "aws.svg",
     text: "AWS",
     url: "google.com",
+    category: "Cloud",
   },
   hammer: {
     icon: "hammer.png",
     text: "Hammer",
     url: null,
+    category: "Other",
   },
   shovel: {
     icon: "shovel.png",
     text: "Shovel",
     url: null,
+    category: "Other",
   },
   hands: {
     icon: "hands.png",
     text: "Hands",
     url: null,
+    category: "Other",
   },
   collaboration: {
     icon: "collaboration.png",
     text: "Collaboration",
     url: null,
+    category: "Other",
   },
 };
 
