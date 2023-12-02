@@ -7,7 +7,7 @@ const TechIcon = ({ technology }) => {
   return (
     <div className="relative inline-block">
       {technology.url !== null ? (
-        <a href={technology.url}>
+        <a className="hover:opacity-50" href={technology.url}>
           <Image
             src={`/assets/tech/${technology.icon}`}
             alt={technology.text}

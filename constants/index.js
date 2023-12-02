@@ -327,7 +327,7 @@ export const projects = [
     name: "This Website!",
     description:
       "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS December '23)",
-    image: "/assets/projects/pathfinding_api/Mesa_heading_square.png",
+    image: "/assets/projects/portfolio_website/Website_Figma.png",
     technologies: ["figma", "git", "nextjs", "tailwind"],
     href: "portfolio",
   },

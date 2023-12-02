@@ -6,7 +6,10 @@ import Image from "next/image";
 const ProjectCard = ({ project }) => {
   return (
     <div className="drop-shadow-md hover:drop-shadow-xl brand-nav-bg-color w-64 h-128 rounded-md overflow-hidden flex flex-col">
-      <a className="flex-grow" href={`#${project.href}`}>
+      <a
+        className="flex-grow opacity-100 hover:opacity-50"
+        href={`#${project.href}`}
+      >
         <div className="w-full h-64 relative">
           <Image
             src={project.image}
