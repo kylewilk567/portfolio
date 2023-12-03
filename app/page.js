@@ -3,19 +3,28 @@ import PageContent from "@/components/PageContent";
 
 export default function Home() {
   return (
-    // <div className="bg-black flex items-center justify-center">
-
+    // <div className="bg-white justify-center flex">
+    //   <div className="max-w-7xl w-full relative flex flex-[1_0_auto]">
+    //     <div className="h-screen w-44 sticky top-0 z-20 flex-shrink-0 brand-nav-bg-color hidden sm:block pt-6">
+    //       Sidebar MORE STUFF MORE STUFF MORE STUFF MORE STUFF
+    //     </div>
+    //     <div className="mt-12 sm:mt-0 w-[1104px] min-h-screen bg-white items-center">
+    //       Content
+    //     </div>
+    //   </div>
     // </div>
-    <div className="max-w-7xl w-full relative flex flex-[1_0_auto] mx-auto my-0 bg-black">
-      <Nav />
-      <div className="mt-12 sm:mt-0 min-h-screen bg-white items-center">
-        <div className="absolute overflow-hidden w-full h-full">
-          <div className="base one"></div>
-          <div className="base two"></div>
-          <div className="base three"></div>
-        </div>
-        <div className="relative z-20">
-          <PageContent />
+    <div className="bg-white flex justify-center">
+      <div className="max-w-7xl w-full relative flex">
+        <Nav />
+        <div className="mt-12 sm:mt-0 max-w-[1104px] min-h-screen bg-white items-center border-r-2">
+          {/* <div className="absolute overflow-hidden w-full h-full">
+            <div className="base one"></div>
+            <div className="base two"></div>
+            <div className="base three"></div>
+          </div> */}
+          <div className="relative z-20">
+            <PageContent />
+          </div>
         </div>
       </div>
     </div>
