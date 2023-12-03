@@ -34,7 +34,15 @@ const PageContent = () => {
 
   return (
     <>
-      <div
+      <div className="w-full min-h-screen brand-bg-color px-10">
+        {activeSection === "" && <Main />}
+        {activeSection === "about" && <About />}
+        {activeSection === "projects" && <Projects />}
+        {activeSection === "contact" && <Contact />}
+        {activeSection === "pathfinding" && <Pathfinding />}
+        {activeSection === "mtouch" && <MTouch />}
+      </div>
+      {/* <div
         id="previous"
         className="w-full min-h-screen brand-bg-color px-10"
         ref={previousSectionRef}
@@ -45,9 +53,9 @@ const PageContent = () => {
         {previousSection === "contact" && <Contact />}
         {previousSection === "pathfinding" && <Pathfinding />}
         {previousSection === "mtouch" && <MTouch />}
-      </div>
+      </div> */}
 
-      <AnimatePresence mode="wait">
+      {/* <AnimatePresence mode="wait">
         <motion.div
           className="w-full min-h-screen brand-bg-color px-10"
           key={activeSection}
@@ -74,7 +82,7 @@ const PageContent = () => {
           {activeSection === "pathfinding" && <Pathfinding />}
           {activeSection === "mtouch" && <MTouch />}
         </motion.div>
-      </AnimatePresence>
+      </AnimatePresence> */}
     </>
   );
 };

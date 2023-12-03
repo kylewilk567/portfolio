@@ -10,14 +10,18 @@ const Nav = () => {
   return (
     <>
       {/* // Mobile Navigation */}
-      <MobileNav
+      {/* <MobileNav
         navLinks={navLinks}
         backgroundColorMap={backgroundColorMap}
         fillColorMap={fillColorMap}
-      />
+      /> */}
 
       {/* // PC navigation */}
-      <div className="h-full w-44 fixed z-10 top-0 left-0 brand-nav-bg-color pt-6 hidden sm:block overflow-x-hidden">
+      {/* <div class="w-44 h-screen bg-gray-800 text-white p-6 sticky top-0">
+        Sidebar content
+      </div> */}
+      {/* <div className="h-screen relative w-44 z-10 flex-shrink-0 brand-nav-bg-color pt-6 hidden sm:block"> */}
+      <div className="h-screen w-44 sticky top-0 z-10 flex-shrink-0 brand-nav-bg-color hidden sm:block pt-6">
         <div className="border-b-2 pb-2 border-[#DFD9FF] text-center">
           <div className="pb-6">
             <Image
@@ -86,6 +90,7 @@ const Nav = () => {
           </div>
         </div>
       </div>
+      {/* </div> */}
     </>
   );
 };
