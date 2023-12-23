@@ -18,6 +18,13 @@
     )
     rgb(var(--background-start-rgb)); */
 
+/* This essentially makes scrollbar always visible - fixes content shifting when height bigger */
+body {
+  overflow-y: scroll;
+}
+    
+    
+
 /* In your custom CSS */
 @layer components {
   .btn {

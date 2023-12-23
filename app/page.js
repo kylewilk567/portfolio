@@ -13,7 +13,7 @@ export default function Home() {
     //     </div>
     //   </div>
     // </div>
-    <div className="bg-white justify-center">
+    <div className="bg-white flex justify-center">
       <div className="max-w-7xl w-full relative flex">
         <Nav />
         <div className="mt-12 sm:mt-0 max-w-[1104px] w-full min-h-screen bg-white items-center border-r-2">
