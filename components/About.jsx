@@ -10,8 +10,8 @@ const About = () => {
     <>
       <div className="mx-auto">
         <Header title="About Me" />
-        <div>
-          <div className="flex flex-col">
+        <div className="grid lg:grid-cols-3">
+          <div className="lg:col-span-2 flex flex-col">
             <div className="flex flex-col">
               <h2 className="font-bold text-2xl my-4">Education</h2>
               <div className="shadow-[0_3px_0_#ddd] brand-nav-bg-color rounded-md overflow-hidden flex flex-col p-8 w-[95%] max-w-[1170px]">
@@ -33,35 +33,35 @@ const About = () => {
               <Experience />
             </div>
           </div>
-        </div>
 
-        <div className="flex flex-col">
-          <h2 className="font-bold text-2xl my-4">Skills</h2>
-          {categories.map((category) => {
-            const skillsInCategory = aboutPageContent.skills.filter(
-              (skill) => skill.technology.category === category
-            );
-
-            if (skillsInCategory.length > 0) {
-              return (
-                <div key={`Category${category}`}>
-                  <h2 className="font-semibold text-xl my-4">{category}</h2>
-                  <div className="flex flex-wrap gap-4 justify-start">
-                    {skillsInCategory.map((skill) => (
-                      <Skill
-                        key={`Skill${skill.technology.text}`}
-                        imgSource={`/assets/tech/${skill.technology.icon}`}
-                        label={skill.technology.text}
-                        progress={skill.skillLevel}
-                      />
-                    ))}
-                  </div>
-                </div>
+          <div className="lg:col-span-1 flex flex-col">
+            <h2 className="font-bold text-2xl my-4">Skills</h2>
+            {categories.map((category) => {
+              const skillsInCategory = aboutPageContent.skills.filter(
+                (skill) => skill.technology.category === category
               );
-            }
 
-            return null; // Do not render the category if there are no skills in it
-          })}
+              if (skillsInCategory.length > 0) {
+                return (
+                  <div key={`Category${category}`}>
+                    <h2 className="font-semibold text-xl my-4">{category}</h2>
+                    <div className="flex flex-wrap justify-start lg:grid lg:grid-cols-2 lg:justify-center gap-4">
+                      {skillsInCategory.map((skill) => (
+                        <Skill
+                          key={`Skill${skill.technology.text}`}
+                          imgSource={`/assets/tech/${skill.technology.icon}`}
+                          label={skill.technology.text}
+                          progress={skill.skillLevel}
+                        />
+                      ))}
+                    </div>
+                  </div>
+                );
+              }
+
+              return null; // Do not render the category if there are no skills in it
+            })}
+          </div>
         </div>
       </div>
     </>
