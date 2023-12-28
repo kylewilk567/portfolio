@@ -64,7 +64,7 @@ const Main = () => {
             </div>
           </div>
         </div>
-        <p className="text-md xl:text-lg pb-16">
+        <p className="text-md xl:text-lg brand-text-color pb-16">
           {mainPageContent.description}
         </p>
         <a href="/KyleResumeF23.pdf" download="Wilkinson_Kyle_Resume.pdf">

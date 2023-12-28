@@ -21,11 +21,15 @@ const ProjectCard = ({ project }) => {
         </div>
 
         <div className="p-2">
-          <h2 className="font-bold text-center text-base">{project.name}</h2>
-          <h3 className="text-sm">{project.description}</h3>
+          <h2 className="font-bold brand-text-color text-center text-base">
+            {project.name}
+          </h2>
+          <h3 className="text-sm brand-text-color-secondary">
+            {project.description}
+          </h3>
         </div>
       </a>
-      <div className="h-10 p-1 w-full bg-slate-300">
+      <div className="h-10 p-1 w-full brand-bg-color-secondary">
         <div className="flex gap-2 items-center">
           {project.technologies.map((technology) => (
             <TechIcon key={technology.text} technology={technology} />

@@ -326,7 +326,7 @@ export const projects = [
   {
     name: "This Website!",
     description:
-      "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS December '23)",
+      "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS soon)",
     image: "/assets/projects/portfolio_website/Website_Figma.png",
     technologies: ["figma", "git", "nextjs", "tailwind"],
     href: "portfolio",

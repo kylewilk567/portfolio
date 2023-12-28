@@ -7,14 +7,14 @@ const InputField = ({ text, isInput, type, required, name, className }) => {
     <div className={`inputBox brand-nav-bg-color ${className}`}>
       {isInput ? (
         <input
-          className="brand-nav-bg-color border border-[#1d2b3a]"
+          className="brand-nav-bg-color border brand-border-color"
           type={type}
           required={required}
           name={name}
         />
       ) : (
         <textarea
-          className="brand-nav-bg-color border border-[#1d2b3a] h-64"
+          className="brand-nav-bg-color border brand-border-color h-64"
           name={name}
           required={required}
         />

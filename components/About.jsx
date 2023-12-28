@@ -13,27 +13,33 @@ const About = () => {
         <div className="grid lg:grid-cols-3">
           <div className="lg:col-span-2 flex flex-col">
             <div className="flex flex-col w-[95%]">
-              <h2 className="font-bold text-2xl my-4">Education</h2>
-              <div className="shadow-[0_3px_0_#ddd] brand-nav-bg-color rounded-md flex flex-col p-4 ml-[60px] max-w-[1170px]">
-                <h1 className="text-2xl font-bold">
+              <h2 className="font-bold brand-text-color text-2xl my-4">
+                Education
+              </h2>
+              <div className="brand-shadow brand-nav-bg-color rounded-md flex flex-col p-4 ml-[60px] max-w-[1170px]">
+                <h1 className="text-2xl font-bold brand-text-color">
                   University of Michigan - College of Engineering
                 </h1>
-                <h2 className="text-lg text-gray-600">Ann Arbor, MI</h2>
-                <p className="mb-2">May 2023</p>
-                <p className="mb-2">
+                <h2 className="text-lg brand-text-color-secondary">
+                  Ann Arbor, MI
+                </h2>
+                <p className="mb-2 brand-text-color">May 2023</p>
+                <p className="mb-2 brand-text-color">
                   B.S.E. in Computer Science, Minor in Electrical Engineering
                 </p>
                 <p className="text-green-600 font-semibold">Summa Cum Laude</p>
               </div>
             </div>
             <div className="flex flex-col">
-              <h2 className="font-bold text-2xl my-4">Experience</h2>
+              <h2 className="font-bold brand-text-color text-2xl my-4">
+                Experience
+              </h2>
               <Experience />
             </div>
           </div>
 
           <div className="lg:col-span-1 flex flex-col">
-            <h2 className="font-bold text-2xl my-4">Skills</h2>
+            <h2 className="font-bold brand-text-color text-2xl my-4">Skills</h2>
             {categories.map((category) => {
               const skillsInCategory = aboutPageContent.skills.filter(
                 (skill) => skill.technology.category === category
@@ -42,7 +48,9 @@ const About = () => {
               if (skillsInCategory.length > 0) {
                 return (
                   <div key={`Category${category}`}>
-                    <h2 className="font-semibold text-xl my-4">{category}</h2>
+                    <h2 className="font-semibold brand-text-color text-xl my-4">
+                      {category}
+                    </h2>
                     <div className="flex flex-wrap justify-start lg:grid lg:grid-cols-2 lg:justify-center gap-4">
                       {skillsInCategory.map((skill) => (
                         <Skill

@@ -5,7 +5,7 @@ const ContactForm = () => {
   // TODO: Add thank you page
 
   return (
-    <div className="shadow-[0_3px_0_#ddd] brand-nav-bg-color rounded-md overflow-hidden flex flex-col p-8 w-full">
+    <div className="brand-shadow brand-nav-bg-color rounded-md overflow-hidden flex flex-col p-8 w-full">
       <form
         className="flex flex-col gap-4"
         action="https://formsubmit.co/kylewilk@umich.edu"

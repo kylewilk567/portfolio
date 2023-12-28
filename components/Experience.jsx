@@ -56,7 +56,7 @@ const Experience = () => {
             <h4 className="vertical-timeline-element-subtitle">
               {experience.company}
             </h4>
-            <ul className="list-disc ml-6">
+            <ul className="list-disc ml-6 brand-text-color">
               {experience.tasks.map((task) => (
                 <li key={`task-${experience.date}-${task.substring(0, 5)}`}>
                   {task}

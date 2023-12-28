@@ -80,6 +80,16 @@ body {
     @apply text-white;
   }
 
+  [class='light'] .brand-text-color-secondary {
+    @apply text-gray-600;
+  }
+  [class='dark'] .brand-text-color-secondary {
+    @apply text-gray-400;
+  }
+  [class='stars'] .brand-text-color-secondary {
+    @apply text-gray-400;
+  }
+
   [class='light'] .brand-nav-text-color {
     @apply text-gray-500
   }
@@ -107,7 +117,27 @@ body {
     @apply bg-gray-700;
   }
   [class='stars'] .brand-bg-color {
-    @apply bg-none; /* Uses animated aurora div effect for background */
+    @apply bg-none xl:bg-gray-700; /* Uses animated aurora div effect for background */
+  }
+
+  [class='light'] .brand-bg-color-secondary {
+    @apply bg-slate-300;
+  }
+  [class='dark'] .brand-bg-color-secondary {
+    @apply bg-slate-500;
+  }
+  [class='stars'] .brand-bg-color-secondary {
+    @apply bg-slate-500;
+  }
+
+  [class='light'] .brand-border-color {
+    @apply border-gray-100;
+  }
+  [class='dark'] .brand-border-color {
+    @apply border-gray-600;
+  }
+  [class='stars'] .brand-border-color {
+    @apply border-teal-400;
   }
 
   [class='light'] .brand-caption {
@@ -120,6 +150,16 @@ body {
     @apply text-sm;
   }
 
+  [class='light'] .brand-shadow {
+    @apply shadow-[0_3px_0_#ddd];
+  }
+  [class='dark'] .brand-shadow {
+    @apply shadow-[0_3px_0_#ddd];
+  }
+  [class='stars'] .brand-shadow {
+    @apply shadow-[0_3px_0_#2DD4BF];
+  }
+
   /* TODO: Update color for line and icon container border below */
     /* The line */
   [class='light'] .vertical-timeline.vertical-timeline-custom-line::before {
@@ -129,7 +169,7 @@ body {
     @apply bg-white;
   }
   [class='stars'] .vertical-timeline.vertical-timeline-custom-line::before {
-    @apply bg-white;
+    @apply bg-[#2DD4BF];
   }
 
 /* Icon container's border */
@@ -140,7 +180,7 @@ body {
     box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
   [class='stars'] .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-icon {
-    box-shadow: 0 0 0 4px #ffffff, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
+    box-shadow: 0 0 0 4px #2DD4BF, inset 0 2px 0 rgba(0, 0, 0, 0.08), 0 3px 0 4px rgba(0, 0, 0, 0.05);
   }
 
   .vertical-timeline.vertical-timeline-custom-line {
@@ -148,13 +188,20 @@ body {
   }
 
   .vertical-timeline-element-title {
-    @apply text-2xl font-bold mb-2;
+    @apply text-2xl font-bold brand-text-color mb-2;
   }
 
   .vertical-timeline-element-subtitle {
-    @apply text-lg mb-4;
+    @apply text-lg mb-4 brand-text-color-secondary;
   }
   
+  .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-date {
+    @apply brand-text-color-secondary;
+  }
+
+  .vertical-timeline.vertical-timeline-custom-line .vertical-timeline-element--work .vertical-timeline-element-content {
+    @apply brand-shadow;
+  }
   
   /* START AURORA BACKGROUND STYLING */
 
