@@ -14,7 +14,9 @@ const Skill = ({ imgSource, label, progress }) => {
         sizes="96px"
         className="mb-2 object-contain w-24 h-24"
       />
-      <p className="text-base font-normal mb-2">{label}</p>
+      <p className="text-base brand-text-color-secondary font-normal mb-2">
+        {label}
+      </p>
       <ProgressBar progress={progress} />
     </div>
   );
