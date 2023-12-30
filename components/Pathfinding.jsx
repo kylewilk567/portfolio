@@ -34,7 +34,7 @@ const Pathfinding = () => {
           layout="responsive"
           className="max-w-md mb-4"
         />
-        <p className="xl:col-span-2">
+        <p className="xl:col-span-2 brand-text-color">
           This project represents my exploration of pathfinding solutions within
           a 3D environment, specifically Minecraft. The objective was to
           efficiently discover short paths across extensive areas. This endeavor
@@ -59,7 +59,7 @@ const Pathfinding = () => {
           layout="responsive"
           className="max-w-md my-2"
         />
-        <p className="text-sm">
+        <p className="text-sm brand-text-color">
           <span className="text-red-400 font-bold">A* algorithm</span> (top)
           takes <span className="text-red-400 font-bold">2027ms</span> to find
           the shortest path while{" "}
@@ -69,7 +69,7 @@ const Pathfinding = () => {
           useful, so greedy implementation is used.
         </p>
         <br />
-        <p>
+        <p className="brand-text-color">
           To enhance the greedy algorithm&apos;s shortcomings, a post-processing
           step was introduced, allowing manual adjustments to the path after its
           initial discovery. This project showcases my commitment to optimizing
@@ -81,7 +81,7 @@ const Pathfinding = () => {
       {/* Extra large screen content */}
       <div className="hidden xl:block mt-4">
         <div className="grid grid-cols-3 gap-4">
-          <p className="col-span-2 max-w-3xl mx-auto">
+          <p className="col-span-2 max-w-3xl mx-auto brand-text-color">
             This project represents my exploration of pathfinding solutions
             within a 3D environment, specifically Minecraft. The objective was
             to efficiently discover short paths across extensive areas. This
@@ -135,7 +135,7 @@ const Pathfinding = () => {
               layout="responsive"
               className="mx-auto"
             />
-            <p>
+            <p className="brand-text-color text-sm">
               <span className="text-red-400 font-bold">A* algorithm</span>{" "}
               (left) takes{" "}
               <span className="text-red-400 font-bold">2027ms</span> to find the
@@ -156,7 +156,7 @@ const Pathfinding = () => {
               layout="responsive"
               className="mx-auto"
             />
-            <p>
+            <p className="brand-text-color text-sm">
               Path post-processing optimizes length if a shorter route is found
             </p>
           </div>

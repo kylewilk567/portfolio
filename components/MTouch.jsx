@@ -3,11 +3,6 @@ import Header from "./Header";
 import Image from "next/image";
 
 const MTouch = () => {
-  /*
-        NOTE: It makes sense to leave header grouped in a div, but not automatically centered on the page.
-        Need to find the right CSS styles to center the Header, but right-align the logo
-        Also need to set height property for image while keeping ratio
-    */
   return (
     <>
       <div className="w-full flex items-center justify-between">
@@ -35,11 +30,11 @@ const MTouch = () => {
             layout="responsive"
             className="pr-4 mx-auto"
           />
-          <p className="brand-caption text-center">
+          <p className="brand-caption brand-text-color text-center">
             <strong>Fig. 1</strong> MTouch sensor
           </p>
         </div>
-        <div className="mx-auto">
+        <div className="mx-auto brand-text-color">
           Desktop Fused Filament Fabrication (FFF) 3D printers, popular for
           prototyping, face challenges in detecting print defects. Current
           solutions are often limited, expensive, or unreliable. MTouch, a
@@ -66,7 +61,7 @@ const MTouch = () => {
               layout="responsive"
               className="pr-4 mt-4 mx-auto"
             />
-            <p className="brand-caption text-center">
+            <p className="brand-caption brand-text-color text-center">
               <strong>Fig. 2</strong> The three states of the sensor during use:{" "}
               <strong>a</strong> deployed position not in contact with the
               print; <strong>b</strong> deployed position in contact with a
@@ -89,7 +84,7 @@ const MTouch = () => {
             layout="responsive"
             className="mx-auto"
           />
-          <p className="brand-caption text-center">
+          <p className="brand-caption brand-text-color text-center">
             <strong>Fig. 3</strong> Sample points generated for a test print.
             Points where the print is expected to be detected are shown in red;
             points where the print is not expected are shown in green
@@ -101,7 +96,7 @@ const MTouch = () => {
       {/* Extra large screen content */}
       <div className="hidden xl:block mt-4">
         <div className="grid grid-cols-3">
-          <p className="col-span-2 max-w-3xl mx-auto">
+          <p className="col-span-2 max-w-3xl mx-auto brand-text-color">
             Desktop Fused Filament Fabrication (FFF) 3D printers, popular for
             prototyping, face challenges in detecting print defects. Current
             solutions are often limited, expensive, or unreliable. MTouch, a
@@ -134,7 +129,7 @@ const MTouch = () => {
                 layout="responsive"
                 className="pr-4 mx-auto"
               />
-              <p className="brand-caption">
+              <p className="brand-caption brand-text-color">
                 <strong>Fig. 1</strong> MTouch sensor
               </p>
             </div>
@@ -147,7 +142,7 @@ const MTouch = () => {
                 layout="responsive"
                 className="pr-4 mt-4 mx-auto"
               />
-              <p className="brand-caption">
+              <p className="brand-caption brand-text-color">
                 <strong>Fig. 2</strong> The three states of the sensor during
                 use: <strong>a</strong> deployed position not in contact with
                 the print; <strong>b</strong> deployed position in contact with
@@ -166,7 +161,7 @@ const MTouch = () => {
               layout="responsive"
               className="mx-auto"
             />
-            <p className="brand-caption">
+            <p className="brand-caption brand-text-color">
               <strong>Fig. 3</strong> Sample points generated for a test print.
               Points where the print is expected to be detected are shown in
               red; points where the print is not expected are shown in green
@@ -183,7 +178,7 @@ const MTouch = () => {
                 layout="responsive"
                 className="mx-auto"
               />
-              <p className="brand-caption">
+              <p className="brand-caption brand-text-color">
                 <strong>Fig. 4</strong> MTouch in action - layer shift detection
               </p>
             </div>
@@ -196,7 +191,7 @@ const MTouch = () => {
                 layout="responsive"
                 className="mx-auto"
               />
-              <p className="brand-caption">
+              <p className="brand-caption brand-text-color">
                 <strong>Fig. 5</strong> Examples of all the faults tested in the
                 fault detection validation tests: <strong>a</strong> filament
                 runout/jam, <strong>b</strong> Y axis layer shift,{" "}

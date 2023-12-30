@@ -58,7 +58,7 @@ const Experience = () => {
             </h4>
             <ul className="list-disc ml-6 brand-text-color">
               {experience.tasks.map((task) => (
-                <li key={`task-${experience.date}-${task.substring(0, 5)}`}>
+                <li key={`task-${experience.date}-${task.substring(5, 10)}`}>
                   {task}
                 </li>
               ))}
