@@ -1,7 +1,6 @@
 "use client";
-import React, { useState } from "react";
+import React from "react";
 import Image from "next/image";
-import reactjs from "@/public/assets/tech/reactjs.png";
 
 const TechIcon = ({ technology }) => {
   return (
@@ -13,6 +12,8 @@ const TechIcon = ({ technology }) => {
             alt={technology.text}
             width={32}
             height={32}
+            sizes="32px"
+            className="h-auto"
           />
         </a>
       ) : (
@@ -21,6 +22,8 @@ const TechIcon = ({ technology }) => {
           alt={technology.text}
           width={32}
           height={32}
+          sizes="32px"
+          className="h-auto"
         />
       )}
     </div>

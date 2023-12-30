@@ -13,8 +13,9 @@ const MTouch = () => {
         <Image
           src="/assets/projects/Michigan_Wolverines_Logo.png"
           alt="img"
-          width={64}
-          height={64}
+          width={0}
+          height={0}
+          sizes="64px"
           className="absolute top-1 right-4"
         />
       </div>
@@ -25,10 +26,10 @@ const MTouch = () => {
           <Image
             src="/assets/projects/mtouch/probe_diagram.png"
             alt="top_view"
-            width="0"
-            height="0"
-            layout="responsive"
-            className="pr-4 mx-auto"
+            width={0}
+            height={0}
+            sizes="268px"
+            className="pr-4 mx-auto w-full h-auto"
           />
           <p className="brand-caption brand-text-color text-center">
             <strong>Fig. 1</strong> MTouch sensor
@@ -56,10 +57,10 @@ const MTouch = () => {
             <Image
               src="/assets/projects/mtouch/probe_probing.png"
               alt="top_view"
-              width="0"
-              height="0"
-              layout="responsive"
-              className="pr-4 mt-4 mx-auto"
+              width={0}
+              height={0}
+              sizes="268px"
+              className="pr-4 mt-4 mx-auto w-full h-auto"
             />
             <p className="brand-caption brand-text-color text-center">
               <strong>Fig. 2</strong> The three states of the sensor during use:{" "}
@@ -79,10 +80,10 @@ const MTouch = () => {
           <Image
             src="/assets/projects/mtouch/sample_points.png"
             alt="top_view"
-            width="0"
-            height="0"
-            layout="responsive"
-            className="mx-auto"
+            width={0}
+            height={0}
+            sizes="268px"
+            className="mx-auto w-full h-auto"
           />
           <p className="brand-caption brand-text-color text-center">
             <strong>Fig. 3</strong> Sample points generated for a test print.
@@ -124,10 +125,10 @@ const MTouch = () => {
               <Image
                 src="/assets/projects/mtouch/probe_diagram.png"
                 alt="top_view"
-                width="0"
-                height="0"
-                layout="responsive"
-                className="pr-4 mx-auto"
+                width={0}
+                height={0}
+                sizes="268px"
+                className="pr-4 mx-auto w-full h-auto"
               />
               <p className="brand-caption brand-text-color">
                 <strong>Fig. 1</strong> MTouch sensor
@@ -137,10 +138,10 @@ const MTouch = () => {
               <Image
                 src="/assets/projects/mtouch/probe_probing.png"
                 alt="top_view"
-                width="0"
-                height="0"
-                layout="responsive"
-                className="pr-4 mt-4 mx-auto"
+                width={0}
+                height={0}
+                sizes="268px"
+                className="pr-4 mt-4 mx-auto w-full h-auto"
               />
               <p className="brand-caption brand-text-color">
                 <strong>Fig. 2</strong> The three states of the sensor during
@@ -156,10 +157,10 @@ const MTouch = () => {
             <Image
               src="/assets/projects/mtouch/sample_points.png"
               alt="top_view"
-              width="0"
-              height="0"
-              layout="responsive"
-              className="mx-auto"
+              width={0}
+              height={0}
+              sizes="268px"
+              className="mx-auto w-full h-auto"
             />
             <p className="brand-caption brand-text-color">
               <strong>Fig. 3</strong> Sample points generated for a test print.
@@ -175,8 +176,8 @@ const MTouch = () => {
                 alt="top_view"
                 width={0}
                 height={0}
-                layout="responsive"
-                className="mx-auto"
+                sizes="320px"
+                className="mx-auto w-full h-auto"
               />
               <p className="brand-caption brand-text-color">
                 <strong>Fig. 4</strong> MTouch in action - layer shift detection
@@ -186,10 +187,10 @@ const MTouch = () => {
               <Image
                 src="/assets/projects/mtouch/faults_tested.png"
                 alt="top_view"
-                width="0"
-                height="0"
-                layout="responsive"
-                className="mx-auto"
+                width={0}
+                height={0}
+                sizes="320px"
+                className="mx-auto w-full h-auto"
               />
               <p className="brand-caption brand-text-color">
                 <strong>Fig. 5</strong> Examples of all the faults tested in the

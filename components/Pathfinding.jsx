@@ -20,6 +20,7 @@ const Pathfinding = () => {
           alt="img"
           width={48}
           height={48}
+          sizes="48px"
           className="absolute top-1 right-4"
         />
       </div>
@@ -29,10 +30,10 @@ const Pathfinding = () => {
         <Image
           src="/assets/projects/pathfinding_api/top_view_mesa.gif"
           alt="top_view"
-          width="0"
-          height="0"
-          layout="responsive"
-          className="max-w-md mb-4"
+          width={0}
+          height={0}
+          sizes="320px"
+          className="max-w-md mb-4 w-full h-auto"
         />
         <p className="xl:col-span-2 brand-text-color">
           This project represents my exploration of pathfinding solutions within
@@ -54,10 +55,10 @@ const Pathfinding = () => {
         <Image
           src="/assets/projects/pathfinding_api/Pathfinder_mobile.gif"
           alt="top_view"
-          width="0"
-          height="0"
-          layout="responsive"
-          className="max-w-md my-2"
+          width={0}
+          height={0}
+          sizes="320px"
+          className="max-w-md my-2 w-full h-auto"
         />
         <p className="text-sm brand-text-color">
           <span className="text-red-400 font-bold">A* algorithm</span> (top)
@@ -109,18 +110,18 @@ const Pathfinding = () => {
             <Image
               src="/assets/projects/pathfinding_api/top_view_mesa.gif"
               alt="top_view"
-              width="0"
-              height="0"
-              layout="responsive"
-              className="pr-4 max-w-md mx-auto"
+              width={0}
+              height={0}
+              sizes="320px"
+              className="pr-4 max-w-md mx-auto w-full h-auto"
             />
             <Image
               src="/assets/projects/pathfinding_api/village_path.gif"
               alt="top_view"
-              width="0"
-              height="0"
-              layout="responsive"
-              className="pr-4 mt-4 max-w-md mx-auto"
+              width={0}
+              height={0}
+              sizes="320px"
+              className="pr-4 mt-4 max-w-md mx-auto w-full h-auto"
             />
           </div>
         </div>
@@ -130,10 +131,10 @@ const Pathfinding = () => {
             <Image
               src="/assets/projects/pathfinding_api/Pathfinder.gif"
               alt="top_view"
-              width="0"
-              height="0"
-              layout="responsive"
-              className="mx-auto"
+              width={0}
+              height={0}
+              sizes="768px"
+              className="mx-auto w-full h-auto"
             />
             <p className="brand-text-color text-sm">
               <span className="text-red-400 font-bold">A* algorithm</span>{" "}
@@ -151,10 +152,10 @@ const Pathfinding = () => {
             <Image
               src="/assets/projects/pathfinding_api/path_opt.gif"
               alt="top_view"
-              width="0"
-              height="0"
-              layout="responsive"
-              className="mx-auto"
+              width={0}
+              height={0}
+              sizes="448px"
+              className="mx-auto w-full h-auto"
             />
             <p className="brand-text-color text-sm">
               Path post-processing optimizes length if a shorter route is found
