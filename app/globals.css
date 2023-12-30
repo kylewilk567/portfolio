@@ -121,13 +121,13 @@ body {
   }
 
   [class='light'] .brand-bg-color-secondary {
-    @apply bg-slate-300;
+    @apply bg-gray-100;
   }
   [class='dark'] .brand-bg-color-secondary {
-    @apply bg-slate-500;
+    @apply bg-gray-600;
   }
   [class='stars'] .brand-bg-color-secondary {
-    @apply bg-slate-500;
+    @apply bg-gray-600;
   }
 
   [class='light'] .brand-border-color {

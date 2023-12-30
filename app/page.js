@@ -3,7 +3,7 @@ import PageContent from "@/components/PageContent";
 
 export default function Home() {
   return (
-    <div className="brand-bg-color flex justify-center">
+    <div className="brand-bg-color-secondary flex justify-center">
       <div className="absolute overflow-hidden w-full h-full xl:block hidden">
         <div className="base one"></div>
         <div className="base two"></div>
