@@ -8,7 +8,7 @@ const Projects = () => {
     <>
       <div className="mx-auto">
         <Header title="Projects and Leadership" />
-        <p className="brand-text-color italic">
+        <p className="brand-text-color italic flex justify-center w-full">
           Click a project to learn more!
         </p>
       </div>
