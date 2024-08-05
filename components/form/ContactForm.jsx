@@ -2,7 +2,8 @@ import React from "react";
 import InputField from "./InputField";
 
 const ContactForm = () => {
-  // TODO: Add thank you page
+  const baseUrl = process.env.NEXT_PUBLIC_BASE_URL;
+  const thankYouUrl = `${baseUrl}/thankyou`;
 
   return (
     <div className="brand-shadow brand-nav-bg-color rounded-md overflow-hidden flex flex-col p-8 w-full">
@@ -20,7 +21,7 @@ const ContactForm = () => {
           className="w-full sm:w-1/2 min-w-[180px]"
         />
         <InputField
-          text="Email"
+          text="Your Email"
           isInput={true}
           type="email"
           required={"required"}
@@ -48,7 +49,7 @@ const ContactForm = () => {
           name="_autoresponse"
           value="Thank you! Kyle will respond back soon."
         ></input>
-        <input type="hidden" name="_next" value="https://google.com"></input>
+        <input type="hidden" name="_next" value={thankYouUrl}></input>
         <button className="btn w-32" type="submit">
           Send Message
         </button>

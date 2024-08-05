@@ -8,6 +8,9 @@ const Projects = () => {
     <>
       <div className="mx-auto">
         <Header title="Projects and Leadership" />
+        <p className="brand-text-color italic">
+          Click a project to learn more!
+        </p>
       </div>
 
       <div className="flex flex-wrap gap-4 mt-4 justify-center">

@@ -8,6 +8,9 @@ import useHash from "@/hooks/useHash";
 import Projects from "./Projects";
 import Pathfinding from "./Pathfinding";
 import MTouch from "./MTouch";
+import Glove from "./Glove";
+import Portfolio from "./Portfolio";
+import EagleProject from "./EagleProject";
 
 const PageContent = () => {
   let { currentHash: activeSection } = useHash();
@@ -21,6 +24,9 @@ const PageContent = () => {
       {activeSection === "contact" && <Contact />}
       {activeSection === "pathfinding" && <Pathfinding />}
       {activeSection === "mtouch" && <MTouch />}
+      {activeSection === "eagle-project" && <EagleProject />}
+      {activeSection === "glove" && <Glove />}
+      {activeSection === "portfolio" && <Portfolio />}
     </div>
   );
 };
