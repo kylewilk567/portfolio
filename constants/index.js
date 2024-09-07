@@ -83,6 +83,9 @@ export const experiences = [
     image: "/assets/about/ford.svg",
     tasks: [
       "Create and test API endpoints using Java Springboot, OpenAPI, and 42Crunch to facilitate scheduling of vehicle manufacturing at different Ford plants",
+      "Iterate on UI designs that build upon functionality of VIN generation system using Angular and demo new features to users",
+      "Enhance application security using Cycode, Checkmarx, and FOSSA to identify and fix vulnerabilities",
+      "Utilize Tekton and Jenkins for deploying software applications efficiently",
       "Prototyped an idea to streamline sharing and management of information using React and TailwindCSS for FCG Hackathon",
     ],
   },
@@ -199,6 +202,12 @@ export const technologies = {
     icon: "tailwind.png",
     text: "TailwindCSS",
     url: "google.com",
+    category: "Frameworks/Libraries",
+  },
+  springBoot: {
+    icon: "spring_boot.png",
+    text: "Spring Boot",
+    url: "https://spring.io/projects/spring-boot",
     category: "Frameworks/Libraries",
   },
   sql: {
