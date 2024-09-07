@@ -9,7 +9,7 @@ const ContactForm = () => {
     <div className="brand-shadow brand-nav-bg-color rounded-md overflow-hidden flex flex-col p-8 w-full">
       <form
         className="flex flex-col gap-4"
-        action="https://formsubmit.co/kylewilk@umich.edu"
+        action="https://formsubmit.co/5bed9566faad43551c8c2f3b2bf62ca8"
         method="POST"
       >
         <InputField
