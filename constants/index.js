@@ -294,6 +294,10 @@ export const aboutPageContent = {
       technology: technologies["aws"],
       skillLevel: 50,
     },
+    {
+      technology: technologies["springBoot"],
+      skillLevel: 70,
+    },
   ],
 };
 
