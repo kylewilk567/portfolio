@@ -77,9 +77,21 @@ export const mainPageContent = {
 
 export const experiences = [
   {
-    title: "Software Engineer",
+    title: "Manufacturing IT Software Engineer",
     company: "Ford Motor Company",
-    date: "September 2023 - Present",
+    date: "November 2024 - Present",
+    image: "/assets/about/ford.svg",
+    tasks: [
+      "Developed an application to enhance manufacturing quality by ensuring plant workstation readiness through a layered approval system",
+      "Collected and implemented user feedback from GEMBA walks to refine application functionality",
+      "Provided technical support for XR technologies, including Microsoft HoloLens and RealWear Nav500",
+      "Researched and evaluated emerging XR technologies to maintain modern solutions and enhance business operations",
+    ],
+  },
+  {
+    title: "Order Scheduling Software Engineer",
+    company: "Ford Motor Company",
+    date: "September 2023 - October 2024",
     image: "/assets/about/ford.svg",
     tasks: [
       "Create and test API endpoints using Java Springboot, OpenAPI, and 42Crunch to facilitate scheduling of vehicle manufacturing at different Ford plants",
