@@ -11,6 +11,7 @@ import MTouch from "./MTouch";
 import Glove from "./Glove";
 import Portfolio from "./Portfolio";
 import EagleProject from "./EagleProject";
+import CoinLister from "./Coinlister";
 
 const PageContent = () => {
   let { currentHash: activeSection } = useHash();
@@ -26,6 +27,7 @@ const PageContent = () => {
       {activeSection === "mtouch" && <MTouch />}
       {activeSection === "eagle-project" && <EagleProject />}
       {activeSection === "glove" && <Glove />}
+      {activeSection === "coinlister" && <CoinLister />}
       {activeSection === "portfolio" && <Portfolio />}
     </div>
   );

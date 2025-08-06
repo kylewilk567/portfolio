@@ -64,7 +64,7 @@ export const navLinks = [
 export const mainPageContent = {
   name: "Kyle",
   description:
-    "Currently a software engineer and FCG at Ford Motor Company embarking on an exciting journey in the tech world. I have a passion for crafting innovative solutions and delivering exceptional user experiences. In the early stages of my career, I'm fueled by a desire to learn and a commitment to solving challenges that have a real impact.  In addition to my software pursuits, I find enjoyment in hiking, skiing, and immersing myself in nature.",
+    "A software engineer and FCG at Ford with a passion for crafting innovative solutions and delivering exceptional user experiences. I am driven by a commitment to solving complex challenges and a continuous desire to learn and grow within the tech world. Outside of my professional pursuits, I find enjoyment in hiking, swing dancing, and immersing myself in nature.",
   titles: [
     "Software Engineer",
     "Michigan Wolverine",
@@ -82,10 +82,10 @@ export const experiences = [
     date: "November 2024 - Present",
     image: "/assets/about/ford.svg",
     tasks: [
-      "Developed an application to enhance manufacturing quality by ensuring plant workstation readiness through a layered approval system",
-      "Collected and implemented user feedback from GEMBA walks to refine application functionality",
-      "Provided technical support for XR technologies, including Microsoft HoloLens and RealWear Nav500",
-      "Researched and evaluated emerging XR technologies to maintain modern solutions and enhance business operations",
+      "Develop an application to enhance manufacturing quality by ensuring plant workstation readiness through a layered approval system",
+      "Collect and implement user feedback from GEMBA walks to refine application functionality",
+      "Provide technical support for XR technologies, including Microsoft HoloLens and RealWear Nav500",
+      "Research and evaluate emerging XR technologies to maintain modern solutions and enhance business operations",
     ],
   },
   {
@@ -94,10 +94,10 @@ export const experiences = [
     date: "September 2023 - October 2024",
     image: "/assets/about/ford.svg",
     tasks: [
-      "Create and test API endpoints using Java Springboot, OpenAPI, and 42Crunch to facilitate scheduling of vehicle manufacturing at different Ford plants",
-      "Iterate on UI designs that build upon functionality of VIN generation system using Angular and demo new features to users",
-      "Enhance application security using Cycode, Checkmarx, and FOSSA to identify and fix vulnerabilities",
-      "Utilize Tekton and Jenkins for deploying software applications efficiently",
+      "Created and tested API endpoints using Java Springboot, OpenAPI, and 42Crunch to facilitate scheduling of vehicle manufacturing at different Ford plants",
+      "Iterated on UI designs that build upon functionality of VIN generation system using Angular and demo new features to users",
+      "Enhanced application security using Cycode, Checkmarx, and FOSSA to identify and fix vulnerabilities",
+      "Utilized Tekton and Jenkins for deploying software applications efficiently",
       "Prototyped an idea to streamline sharing and management of information using React and TailwindCSS for FCG Hackathon",
     ],
   },
@@ -234,6 +234,18 @@ export const technologies = {
     url: "google.com",
     category: "Cloud",
   },
+  gcp: {
+    icon: "gcp.png",
+    text: "GCP",
+    url: "https://cloud.google.com/?hl=en",
+    category: "Cloud",
+  },
+  angular: {
+    icon: "angular.png",
+    text: "Angular",
+    url: "https://angular.dev/",
+    category: "Frameworks/Libraries",
+  },
   hammer: {
     icon: "hammer.png",
     text: "Hammer",
@@ -349,9 +361,18 @@ export const projects = [
   },
 
   {
+    name: "CoinLister - Personal Project",
+    description:
+        "An AI-powered application that automates the creation of online coin listings using Google Vision for intelligent cropping and OpenAI for compelling description generation. The entire solution is deployed on Google Cloud, running efficiently for under $1 per month.",
+    image: "/assets/projects/coinlister/indian_bounding_box_square.jpg",
+    technologies: ["git", "angular", "springBoot", "gcp"],
+    href: "coinlister",
+  },
+
+  {
     name: "This Website!",
     description:
-      "Designed and programmed portfolio website. Deployed to Vercel (planned to deploy to AWS soon)",
+      "Designed and programmed portfolio website. Deployed to Vercel",
     image: "/assets/projects/portfolio_website/Website_Figma.png",
     technologies: ["figma", "git", "nextjs", "tailwind"],
     href: "portfolio",
