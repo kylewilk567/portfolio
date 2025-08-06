@@ -63,7 +63,7 @@ const CoinLister = () => {
                         className="w-full max-w-md h-auto rounded-lg border"
                     />
                     <p className="brand-caption brand-text-color text-center max-w-md px-4">
-                        <strong>Fig. 2</strong> The app's confirmation screen (left) and the resulting live eBay listing (right).
+                        <strong>Fig. 2</strong> The app&apos;s confirmation screen (left) and the resulting live eBay listing (right).
                     </p>
                 </div>
             </div>
@@ -90,7 +90,7 @@ const CoinLister = () => {
                         </p>
                         <p>
                             I am now developing version 2.0 with an Angular frontend, expanding it into a complete
-                            inventory management system with profit/loss reporting and value estimation.
+                            inventory management system with profit/loss reporting and AI-driven value estimation.
                         </p>
                     </div>
 
@@ -104,7 +104,7 @@ const CoinLister = () => {
                             className="w-full h-auto rounded-lg border shadow-md"
                         />
                         <p className="brand-caption brand-text-color mt-3 text-center px-4">
-                            The application's confirmation UI (left) and the final, live eBay listing it generated (right).
+                            The application&apos;s confirmation UI (left) and the final, live eBay listing it generated (right).
                         </p>
                     </div>
                 </div>
