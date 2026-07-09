@@ -3,13 +3,16 @@ import useHash from "@/hooks/useHash";
 import React, { useState } from "react";
 
 const NavLink = ({ link, backgroundColor, fillColor, onClick }) => {
-  if (!link.icon.props.className) {
-    link.icon.props.className = fillColor;
-  } else if (!link.icon.props.className.includes(fillColor)) {
-    link.icon.props.className += ` ${fillColor}`;
-  }
-
   const [isHovered, setIsHovered] = useState(false);
+
+  // Clone the icon element with updated className (React 19 requires this instead of mutation)
+  const iconClassName = link.icon.props.className
+    ? `${link.icon.props.className} ${fillColor}`.includes(fillColor)
+      ? link.icon.props.className
+      : `${link.icon.props.className} ${fillColor}`
+    : fillColor;
+  
+  const iconWithColor = React.cloneElement(link.icon, { className: iconClassName });
 
   const handleMouseEnter = () => {
     setIsHovered(true);
@@ -54,7 +57,7 @@ const NavLink = ({ link, backgroundColor, fillColor, onClick }) => {
           onClick={onClick ? onClick : null}
         >
           <span className="flex items-center gap-2">
-            {link.icon}
+            {iconWithColor}
             {link.title}
           </span>
         </a>

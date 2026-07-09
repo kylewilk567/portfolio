@@ -25,6 +25,7 @@ const Nav = () => {
               src={headshot}
               alt="My Headshot"
               width={96}
+              height={96}
             />
           </div>
 
