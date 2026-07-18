@@ -1,5 +1,6 @@
 "use client";
-import useHash from "@/hooks/useHash";
+import Link from "next/link";
+import { usePathname } from "next/navigation";
 import React, { useState } from "react";
 
 const NavLink = ({ link, backgroundColor, fillColor, onClick }) => {
@@ -19,20 +20,21 @@ const NavLink = ({ link, backgroundColor, fillColor, onClick }) => {
     setIsHovered(false);
   };
 
-  let { currentHash: activeSection, previousHash: previousSection } = useHash();
-  activeSection = activeSection.slice(1);
-  previousSection = previousSection.slice(1);
+  const pathname = usePathname();
+  // link.id is "" for home, "about", "projects", etc.
+  const href = link.id === "" ? "/" : `/${link.id}`;
+  const isActive = pathname === href;
 
-  const getStyles = (currentSection) => {
+  const getStyles = () => {
     // Set defaults
     let linkStyles =
       "w-full h-full flex items-center text-base no-underline brand-nav-text-color nav-btn";
 
     // Note: Left padding should be equal to div width for active section
-    if (currentSection === activeSection || isHovered) linkStyles += " pl-2";
+    if (isActive || isHovered) linkStyles += " pl-2";
     else linkStyles += " pl-3";
 
-    if (currentSection === activeSection) linkStyles += " font-bold";
+    if (isActive) linkStyles += " font-bold";
 
     return linkStyles;
   };
@@ -44,20 +46,20 @@ const NavLink = ({ link, backgroundColor, fillColor, onClick }) => {
         onMouseEnter={handleMouseEnter}
         onMouseLeave={handleMouseLeave}
       >
-        {(link.id === activeSection || isHovered) && (
+        {(isActive || isHovered) && (
           <div className={`w-1 h-full z-20 ${backgroundColor}`} />
         )}
 
-        <a
-          className={getStyles(link.id)}
-          href={`#${link.id}`}
+        <Link
+          className={getStyles()}
+          href={href}
           onClick={onClick ? onClick : null}
         >
           <span className="flex items-center gap-2">
             {link.icon}
             {link.title}
           </span>
-        </a>
+        </Link>
       </div>
     </>
   );
