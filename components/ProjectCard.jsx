@@ -1,14 +1,15 @@
 "use client";
 import React from "react";
+import Link from "next/link";
 import TechIcon from "./TechIcon";
 import Image from "next/image";
 
 const ProjectCard = ({ project }) => {
   return (
     <div className="drop-shadow-md hover:drop-shadow-xl brand-nav-bg-color w-64 h-128 rounded-md overflow-hidden flex flex-col">
-      <a
+      <Link
         className="flex-grow opacity-100 hover:opacity-50"
-        href={`#${project.href}`}
+        href={`/${project.href}`}
       >
         <div className="w-full h-64 relative">
           <Image
@@ -28,7 +29,7 @@ const ProjectCard = ({ project }) => {
             {project.description}
           </h3>
         </div>
-      </a>
+      </Link>
       <div className="h-10 p-1 w-full brand-bg-color-secondary">
         <div className="flex gap-2 items-center">
           {project.technologies.map((technology) => (
