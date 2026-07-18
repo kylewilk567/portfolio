@@ -48,6 +48,7 @@ const Main = () => {
             src={mainImg}
             alt="My adventures"
             width={256}
+            height={256}
           />
           <div className="py-6 flex">
             <p className="md:text-3xl text-2xl font-bold brand-text-color">
@@ -82,6 +83,7 @@ const Main = () => {
           src={mainImg}
           alt="My adventures"
           width={256}
+          height={256}
         />
         <div className="pt-6 flex">
           <p className="md:text-xl xl:text-2xl font-bold brand-text-color">
