@@ -68,7 +68,7 @@ const Main = () => {
         <p className="text-md xl:text-lg brand-text-color pb-16">
           {mainPageContent.description}
         </p>
-        <a href="/KyleResumeF25.pdf" download="Wilkinson_Kyle_Resume.pdf">
+        <a href="/KyleResume.pdf" download="Wilkinson_Kyle_Resume.pdf">
           <button className="btn">Download Resume</button>
         </a>
       </div>
